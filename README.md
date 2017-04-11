@@ -1,5 +1,5 @@
 # MxEduOL
-* A basic educational website wrote in Win10x64 using :
+* A basic educational website wrote in Win10x64, which tools I using as follows:
 
 tools | version
 ----- | -----
