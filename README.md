@@ -7,3 +7,5 @@ Python |2.7
 Django |1.9
 MySQL |5.6.35
 xadmin |0.6.1
+
+打造的技术亮点'%desktop%/社区Web产品计划书.md'
