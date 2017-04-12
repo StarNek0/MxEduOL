@@ -29,7 +29,7 @@ class UserProfile(AbstractUser):  # 重载了用户profile
 class EmailVerifyRecord(models.Model):
     code = models.CharField(max_length=20, verbose_name='验证码')
     email = models.CharField(max_length=50, verbose_name='邮箱')
-    send_type = models.CharField(max_length=10, choice=(('register', '注册'), ('forget', '找回密码')))
+    send_type = models.CharField(max_length=10, choices=(('register', '注册'), ('forget', '找回密码')))
     send_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
@@ -47,3 +47,5 @@ class Banner(models.Model):
     class Meta:
         verbose_name = '轮播图'
         verbose_name_plural = verbose_name
+
+
