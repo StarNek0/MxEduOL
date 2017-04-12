@@ -45,9 +45,10 @@ class Video(models.Model):
 class CourseResource(models.Model):
     course = models.ForeignKey(Course, verbose_name='课程')
     name = models.CharField(max_length=100, verbose_name='名称')
-    download = models.FileField(upload_to='course/resource/%Y/%m', verbose_name='资源文件', max_length=100)
+    download = models.FileField(upload_to='courses/resource/%Y/%m', verbose_name='资源文件', max_length=100)
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     class Meta:
         verbose_name = '课程资源'
         verbose_name_plural = verbose_name
+
