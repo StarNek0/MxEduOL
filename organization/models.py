@@ -5,6 +5,16 @@ from datetime import datetime
 from django.db import models
 
 
+class CityDict(models.Model):
+    name = models.CharField(max_length=30, verbose_name='城市名称')
+    desc = models.CharField(max_length=200, verbose_name='城市描述')
+    add_time = models.DateTimeField(default=datetime.now)
+
+    class Meta:
+        verbose_name = '城市基本信息'
+        verbose_name_plural = verbose_name
+
+
 class CourseOrg(models.Model):
     name = models.CharField(max_length=50, verbose_name='机构名称')
     desc = models.TextField(verbose_name='机构描述')
@@ -36,11 +46,3 @@ class Teacher(models.Model):
         verbose_name_plural = verbose_name
 
 
-class CityDict(models.Model):
-    name = models.CharField(max_length=30, verbose_name='城市名称')
-    desc = models.CharField(max_length=200, verbose_name='城市描述')
-    add_time = models.DateTimeField(default=datetime.now)
-
-    class Meta:
-        verbose_name = '城市基本信息'
-        verbose_name_plural = verbose_name
