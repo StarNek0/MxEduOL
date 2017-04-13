@@ -116,15 +116,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'zh_Hans'#'en-us'
+LANGUAGE_CODE = 'zh_Hans'  # 'en-us' 1.8前用的zh-cn
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'  # 'UTC'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False  # True  否则就不是本地时间而是UTC时间了
 
 
 # Static files (CSS, JavaScript, Images)

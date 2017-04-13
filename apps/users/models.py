@@ -11,12 +11,12 @@ from django.contrib.auth.models import AbstractUser
 
 
 class UserProfile(AbstractUser):  # 重载了用户profile
-    nickname = models.CharField(max_length=50, verbose_name='昵称', default='')
+    nickname = models.CharField(max_length=100, verbose_name='昵称', default='', null=True, blank=True)
     birthday = models.DateField(verbose_name='生日', null=True, blank=True)
-    gender = models.CharField(max_length=5, choices=(('male', '男'), ('female', '女')), default='female')
-    address = models.CharField(max_length=100, default='')
-    mobile = models.CharField(max_length=11, null=True, blank=True)
-    image = models.ImageField(upload_to='image/%Y/%m', default='image/default.png', max_length=100)
+    gender = models.CharField(max_length=100, choices=(('male', '男'), ('female', '女')), default='female')
+    address = models.CharField(max_length=100, default='', null=True, blank=True)
+    mobile = models.CharField(max_length=100, null=True, blank=True)
+    image = models.ImageField(upload_to='image/%Y/%m', default='image/default.png', max_length=100, null=True, blank=True)
 
     class Meta:
         verbose_name = '用户信息'
