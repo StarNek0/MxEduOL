@@ -12,6 +12,6 @@ Navicat|10.0.11
 
 Then is the packages' Version:
 
-<img src="https://github.com/zsdostar/MxEduOL/raw/master/image/vim-screenshot.jpg" />
+<img src="https://github.com/zsdostar/MxEduOL/raw/master/image/PackagesVersion.png" />
 
 打造的技术亮点'%desktop%/社区Web产品计划书.md'
