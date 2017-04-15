@@ -11,6 +11,6 @@ Workbench|6.3CE
 Navicat|10.0.11
 
 Then is the packages' Version:
-<img src="E:/djangoProject/MxEduOL/image/PackagesVersion.png"></img>
+<img src="image/PackagesVersion.png"></img>
 
 打造的技术亮点'%desktop%/社区Web产品计划书.md'
