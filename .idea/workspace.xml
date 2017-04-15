@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -494,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492252771253</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="let's make readme.md difference.">
+      <created>1492254195089</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1492254195090</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -538,7 +544,8 @@
     <MESSAGE value="4-6 design org&amp;techer models&#10;创建了app organization，其models包括了教师信息，机构信息，城市信息，其中存在着外键约束" />
     <MESSAGE value="4-7 design operation models&#10;创建了app operation，其models包括了用户请求，用户收藏，消息模块，用户课程，课程评论。&#10;修改setting的app_install，添加app索引" />
     <MESSAGE value="5-1 install admin&#10;安装了xadmin替代原生admin，&#10;注释掉了admin中注册的模块，&#10;makemigrations生成了xadmin的数据表。" />
-    <option name="LAST_COMMIT_MESSAGE" value="5-1 install admin&#10;安装了xadmin替代原生admin，&#10;注释掉了admin中注册的模块，&#10;makemigrations生成了xadmin的数据表。" />
+    <MESSAGE value="let's make readme.md difference." />
+    <option name="LAST_COMMIT_MESSAGE" value="let's make readme.md difference." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
