@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'courses',
     'organization',
     'operation',
+    'xadmin',
+    'crispy_forms'
 ]
 AUTH_USER_MODEL = 'users.UserProfile'  # 重载一个setting方法,这是一个必要的步骤，否则报错
 # 如果users打成了user则报错LookupError: No installed app with label user
