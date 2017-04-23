@@ -133,3 +133,6 @@ USE_TZ = False  # True  否则就不是本地时间而是UTC时间了
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),  # 注意这里要加逗号！
+)
