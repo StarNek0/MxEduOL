@@ -1,10 +1,23 @@
 # coding:utf8
 import xadmin
+from xadmin import views  # for basesetting
 __author__ = 'zsdostar'
 __date__ = '2017/4/15 19:21'
 
 
 from.models import EmailVerifyRecord, Banner
+
+
+#  主题设置:
+class BaseSetting(object):
+    enable_themes = True
+    use_bootswatch = True
+
+
+class GlobalSettings(object):
+    site_title = '慕学后台'  # title
+    site_footer = '慕学在线网'  # 底部
+    menu_style = 'accordion'  # 折叠用户表
 
 
 class EmailVerifyRecordAdmin(object):
@@ -20,3 +33,5 @@ class BannerAdmin(object):
 
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 xadmin.site.register(Banner, BannerAdmin)
+xadmin.site.register(views.BaseAdminView, BaseSetting)  # for baseSetting
+xadmin.site.register(views.CommAdminView, GlobalSettings)
