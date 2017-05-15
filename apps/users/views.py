@@ -35,7 +35,7 @@ class LoginView(View):  # 实际上就是变了一种代码的组织形式，和
             else:
                 return render(request, 'login.html', {'msg': '用户名或密码错误'})
         else:
-            return render(request, 'login.html', {'msg': '用户名或密码错误'})
+            return render(request, 'login.html', {'login_form': login_form})
 
 # 用类而不是函数来做，故此删掉
 # def user_login(request):
