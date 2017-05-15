@@ -9,7 +9,7 @@ tools | version
 Pycharm Pro|2017.1
 MySQL |5.6.35
 Workbench|6.3CE
-Navicat|10.0.11
+Navicat|11.0.10
 
 Then is the packages' Version:
 
