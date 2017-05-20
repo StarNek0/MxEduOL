@@ -8,6 +8,7 @@ from django.views.generic.base import View
 from .models import UserProfile
 from .forms import LoginForm
 
+
 class CustomBackend(ModelBackend):
     def authenticate(self, username=None, password=None, **kwargs):
         try:
