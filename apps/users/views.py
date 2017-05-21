@@ -38,18 +38,7 @@ class LoginView(View):  # 实际上就是变了一种代码的组织形式，和
         else:
             return render(request, 'login.html', {'login_form': login_form})
 
-# 用类而不是函数来做，故此删掉
-# def user_login(request):
-#     if request.method == 'POST':
-#         user_name = request.POST.get('username', '')
-#         pass_word = request.POST.get('password', '')
-#         user = authenticate(username=user_name, password=pass_word)
-#         if user is not None:
-#             login(request, user)
-#             return render(request, 'index.html')
-#         else:
-#             return render(request, 'login.html', {'msg': '用户名或密码错误'})
-#     elif request.method == 'GET':
-#         return render(request, 'login.html', {})
 
-# form 用处:把用户提交过来的表单做预处理，判断字段是否存在，可以免于写复杂的判断逻辑细节
+class RegisterView(View):
+    def get(self, request):
+        return render(request, 'register.html', {})
