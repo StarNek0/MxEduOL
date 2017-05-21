@@ -6,7 +6,7 @@ from django.db.models import Q  # 并集查询
 from django.views.generic.base import View
 
 from .models import UserProfile
-from .forms import LoginForm
+from .forms import LoginForm, RegisterForm
 
 
 class CustomBackend(ModelBackend):
@@ -41,4 +41,6 @@ class LoginView(View):  # 实际上就是变了一种代码的组织形式，和
 
 class RegisterView(View):
     def get(self, request):
-        return render(request, 'register.html', {})
+        register_form = RegisterForm()
+        return render(request, 'register.html', {'register_form': register_form})
+

@@ -145,6 +145,8 @@
                         </div>
                         <div class="form-group marb8 captcha1 ">
                             <label>验&nbsp;证&nbsp;码</label>
+                            {{ register_form.captcha }}
+{#                            这里就是插件在页面上实现的位置_(:зゝ∠)_#}
                             <img src="/captcha/image/2f3f82e5f7a054bf5caa93b9b0bb6cc308fb7011/" alt="captcha" class="captcha" /> <input id="id_captcha_0" name="captcha_0" type="hidden" value="2f3f82e5f7a054bf5caa93b9b0bb6cc308fb7011" /> <input autocomplete="off" id="id_captcha_1" name="captcha_1" type="text" />
                         </div>
                         <div class="error btns" id="jsEmailTips"></div>
