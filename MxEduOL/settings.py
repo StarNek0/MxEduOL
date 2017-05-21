@@ -135,8 +135,17 @@ USE_TZ = False  # True  否则就不是本地时间而是UTC时间了
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+# 资源文件路径
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),  # 注意这里要加逗号！
 )
+
+# 邮件配置
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'mxeduol@163.com'
+EMAIL_HOST_PASSWORD = 'admin123'
+EMAIL_USE_TLS = False
+EMAIL_FROM = 'mxeduol@163.com'
