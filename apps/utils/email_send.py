@@ -30,7 +30,7 @@ def send_register_email(email, send_type='register'):  # 发送验证邮件
     email_title = ''
     email_body = ''
 
-    if send_type =='register':
+    if send_type == 'register':
         email_title = '慕学在线网注册激活链接'
         email_body = '请点击下边的链接激活你的账号: http://127.0.0.1:8000/active/{0}'.format(code)
 

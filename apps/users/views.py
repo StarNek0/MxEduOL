@@ -6,7 +6,7 @@ from django.db.models import Q  # 并集查询
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
 
-from .models import UserProfile
+from .models import UserProfile, EmailVerifyRecord
 from .forms import LoginForm, RegisterForm
 from utils.email_send import send_register_email
 
@@ -33,8 +33,11 @@ class LoginView(View):  # 实际上就是变了一种代码的组织形式，和
             pass_word = request.POST.get('password', '')
             user = authenticate(username=user_name, password=pass_word)
             if user is not None:
-                login(request, user)
-                return render(request, 'index.html')
+                if user.is_active:
+                    login(request, user)
+                    return render(request, 'index.html')
+                else:
+                    return render(request, 'login.html', {'msg': '用户未激活'})
             else:
                 return render(request, 'login.html', {'msg': '用户名或密码错误'})
         else:
@@ -63,3 +66,15 @@ class RegisterView(View):
             return render(request, 'login.html')
         else:
             return render(request, 'register.html', {'register_form': register_form})
+
+
+class ActiveUserView(View):
+    def get(self, request, active_code):
+        all_records = EmailVerifyRecord.objects.filter(code = active_code)
+        if all_records:
+            for record in all_records:
+                email = record.email
+                user = UserProfile.objects.get(email=email)
+                user.is_active = True
+                user.save()
+        return render(request, 'login.html')
