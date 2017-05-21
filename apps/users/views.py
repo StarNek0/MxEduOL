@@ -5,8 +5,10 @@ from django.contrib.auth.backends import ModelBackend  # 自定义逻辑
 from django.db.models import Q  # 并集查询
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
+
 from .models import UserProfile
 from .forms import LoginForm, RegisterForm
+from utils.email_send import send_register_email
 
 
 class CustomBackend(ModelBackend):
@@ -41,16 +43,22 @@ class LoginView(View):  # 实际上就是变了一种代码的组织形式，和
 
 class RegisterView(View):
     def get(self, request):
-        register_form = RegisterForm(request.POST)  # 把后台传的参数放进来
+        register_form = RegisterForm()
         return render(request, 'register.html', {'register_form': register_form})
 
     def post(self, request):
-        register_form = RegisterForm()
+        register_form = RegisterForm(request.POST)  # 为什么改了半天不显示errorput呢，就是因为把request.POST扔到了上面的get
         if register_form.is_valid():
-            user_name = request.POST.get('username', '')
+            user_name = request.POST.get('email', '')
             pass_word = request.POST.get('password', '')  # 取出username和password
+
             user_profile = UserProfile()  # 数据库实例化
             user_profile.username = user_name  # 传值给数据库
             user_profile.email = user_name
             user_profile.password = make_password(pass_word)  # 密码加密后再存储
             user_profile.save()
+
+            send_register_email(user_name, 'register')
+            return render(request, 'login.html')
+        else:
+            return render(request, 'register.html', {'register_form': register_form})

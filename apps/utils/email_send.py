@@ -8,6 +8,7 @@ from django.core.mail import send_mail  # Django内置邮件发送函数
 from users.models import EmailVerifyRecord
 from MxEduOL import settings
 
+
 def random_str(randomlength=8):  # 生成随机校验码
     str = ''
     chars = string.ascii_letters + '0123456789'
