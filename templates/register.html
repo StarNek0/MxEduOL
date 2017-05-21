@@ -69,8 +69,8 @@
             <p class="fl hd-tips">慕学在线，在线学习平台！</p>
             <ul class="fr hd-bar">
                 <li>服务电话：<span>4001008031</span></li>
-                <li><a href="login.html">[登录]</a></li>
-                <li class="active"><a href="register.html">[注册]</a></li>
+                <li><a href="{% url 'login' %}">[登录]</a></li>
+                <li class="active"><a href="{% url 'register' %}">[注册]</a></li>
             </ul>
         </div>
     </div>
@@ -79,9 +79,9 @@
     <div class="c-box bg-box">
         <div class="login-box clearfix">
             <div class="hd-login clearfix">
-                <a class="index-logo" href="index.html"></a>
+                <a class="index-logo" href="{% url 'index' %}"></a>
                 <h1>用户注册</h1>
-                <a class="index-font" href="index.html">回到首页</a>
+                <a class="index-font" href="{% url 'index' %}">回到首页</a>
             </div>
             <div class="fl slide">
                 <div class="imgslide">
@@ -133,7 +133,7 @@
                     <!--</form>-->
                 <!--</div>-->
                 <div class="tab-form">
-                    <form id="email_register_form" method="post" action="register.html" autocomplete="off">
+                    <form id="email_register_form" method="post" action="{% url 'register' %}" autocomplete="off">
                         <input type='hidden' name='csrfmiddlewaretoken' value='gTZljXgnpvxn0fKZ1XkWrM1PrCGSjiCZ' />
                         <div class="form-group marb20 ">
                             <label>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
@@ -153,10 +153,11 @@
                         <div class="auto-box marb8">
                         </div>
                         <input class="btn btn-green" id="jsEmailRegBtn" type="submit" value="注册并登录" />
+                        {% csrf_token %}
                     <input type='hidden' name='csrfmiddlewaretoken' value='5I2SlleZJOMUX9QbwYLUIAOshdrdpRcy' />
                     </form>
                 </div>
-                <p class="form-p">已有账号？<a href="login.html">[立即登录]</a></p>
+                <p class="form-p">已有账号？<a href="{% url 'login' %}">[立即登录]</a></p>
             </div>
         </div>
     </div>
