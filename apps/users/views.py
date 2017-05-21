@@ -55,6 +55,7 @@ class RegisterView(View):
             user_profile = UserProfile()  # 数据库实例化
             user_profile.username = user_name  # 传值给数据库
             user_profile.email = user_name
+            user_profile.is_active = False
             user_profile.password = make_password(pass_word)  # 密码加密后再存储
             user_profile.save()
 

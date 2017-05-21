@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/forms.py" afterPath="$PROJECT_DIR$/apps/users/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/views.py" afterPath="$PROJECT_DIR$/apps/users/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/utils/email_send.py" afterPath="$PROJECT_DIR$/apps/utils/email_send.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="$PROJECT_DIR$/templates/register.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +42,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="568">
+              <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
               <folding>
                 <element signature="e#14#49#0" expanded="true" />
               </folding>
@@ -91,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="75" column="90" lean-forward="true" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
+              <caret line="75" column="90" lean-forward="false" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -841,7 +837,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495370471267</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="6-10 user register-4 part1&#10;forms-修改了最小密码长度从8到6，&#10;修复了不显示errorput的bug，&#10;注册成功后返回登录界面。">
+      <created>1495373862733</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1495373862733</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -917,7 +920,8 @@
     <MESSAGE value="6-7 user register-2 part2&#10;逻辑传值-注册时，数据传给数据库，&#10;csrftoken，&#10;修改herf由&quot;.html&quot;到&quot;{% url ''%}&quot;&quot;" />
     <MESSAGE value="6-7 user register-3 part1&#10;邮件发送的函数：&#10;包括生成校验码，&#10;发送邮件的主题与点击链接" />
     <MESSAGE value="6-9 user register-3 part2&#10;setting里配置邮件服务器用户密码等，&#10;然后邮件发送py里使用内置的邮件发送函数发送邮件" />
-    <option name="LAST_COMMIT_MESSAGE" value="6-9 user register-3 part2&#10;setting里配置邮件服务器用户密码等，&#10;然后邮件发送py里使用内置的邮件发送函数发送邮件" />
+    <MESSAGE value="6-10 user register-4 part1&#10;forms-修改了最小密码长度从8到6，&#10;修复了不显示errorput的bug，&#10;注册成功后返回登录界面。" />
+    <option name="LAST_COMMIT_MESSAGE" value="6-10 user register-4 part1&#10;forms-修改了最小密码长度从8到6，&#10;修复了不显示errorput的bug，&#10;注册成功后返回登录界面。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1295,7 +1299,7 @@
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="75" column="90" lean-forward="true" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
+          <caret line="75" column="90" lean-forward="false" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
           <folding />
         </state>
       </provider>
@@ -1318,8 +1322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        <state relative-caret-position="568">
+          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
           </folding>
