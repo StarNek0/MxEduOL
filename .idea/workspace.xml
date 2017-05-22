@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,25 +38,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
               <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="104">
-                <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -180,6 +166,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,11 +259,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/PyFiles" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -830,7 +816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495378499262</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update README.md">
+      <created>1495378821238</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1495378821238</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -899,7 +892,6 @@
     <MESSAGE value="6-2 &amp; 6-3用户登录界面的配置&#10;包括了:&#10;html页面的修改，与后台逻辑的交互 -&gt; 登录成功与失败在首页是否显示登录注册按钮&#10;csrf验证&#10;&#10;修改登录url&#10;views中登录逻辑判定与跳转页面 -&gt; 包括了ModelBackend引用数据库数据来比对用户名密码信息，CustomBackend使得可以用邮箱判定用户名是否正确" />
     <MESSAGE value="6-4 form来验证登陆&#10;1）把view中的login模块由函数改为类来实现&#10;2）用form来验证用户名密码的长度是否合适" />
     <MESSAGE value="6-5完善上一个commit&#10;使用户为空或长度不符合要求时返回具体的错误信息" />
-    <MESSAGE value="update README.md" />
     <MESSAGE value="6-7 user register-1&#10;导入register.html，修改其中静态资源路径，href=&quot;{% static '*.*' %}&quot;，&#10;添加与修改其url，&#10;index注册会跳转到register，href=&quot;{% url 'register' %}&quot;，&#10;添加图片验证码插件，配置其urls、表单" />
     <MESSAGE value="6-7 user register-2 part1&#10;实例化验证码插件类，并将之实现在注册的html中" />
     <MESSAGE value="6-7 user register-2 part2&#10;逻辑传值-注册时，数据传给数据库，&#10;csrftoken，&#10;修改herf由&quot;.html&quot;到&quot;{% url ''%}&quot;&quot;" />
@@ -908,7 +900,8 @@
     <MESSAGE value="6-10 user register-4 part1&#10;forms-修改了最小密码长度从8到6，&#10;修复了不显示errorput的bug，&#10;注册成功后返回登录界面。" />
     <MESSAGE value="6-10 user register-4 part1&#10;设置用户激活状态由默认激活改成默认不激活" />
     <MESSAGE value="6-10 user register-4 part2&#10;添加激活函数ActiveUserView，&#10;添加登录时对用户是否激活的判定，&#10;添加访问邮件激活链接的url" />
-    <option name="LAST_COMMIT_MESSAGE" value="6-10 user register-4 part2&#10;添加激活函数ActiveUserView，&#10;添加登录时对用户是否激活的判定，&#10;添加访问邮件激活链接的url" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1139,6 +1132,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2746">
           <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,6 +1217,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="148" column="32" lean-forward="false" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,20 +1259,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="104">
             <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1285,6 +1271,14 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
