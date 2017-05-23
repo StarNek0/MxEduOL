@@ -21,7 +21,7 @@ from django.conf.urls import url, include
 from django.views.generic import TemplateView
 
 # from users.views import user_login
-from users.views import LoginView, RegisterView, ActiveUserView
+from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
@@ -31,4 +31,5 @@ urlpatterns = [
     url(r'^register/$', RegisterView.as_view(), name='register'),
     url(r'^captcha/', include('captcha.urls')),
     url(r'^active/(?P<active_code>.*)/$', ActiveUserView.as_view(), name='user_active'),
+    url(r'^forger/$', ForgetPwdView.as_view(), name='forget_pwd')
 ]
