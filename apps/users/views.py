@@ -7,7 +7,7 @@ from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
 
 from .models import UserProfile, EmailVerifyRecord
-from .forms import LoginForm, RegisterForm
+from .forms import LoginForm, RegisterForm, ForgetForm
 from utils.email_send import send_register_email
 
 
@@ -50,7 +50,7 @@ class RegisterView(View):
         return render(request, 'register.html', {'register_form': register_form})
 
     def post(self, request):
-        register_form = RegisterForm(request.POST)  # 为什么改了半天不显示errorput呢，就是因为把request.POST扔到了上面的get
+        register_form = RegisterForm(request.POST)  # 为什么改了半天不显示errorput呢，因为把request.POST扔到了上面的get
         if register_form.is_valid():
             user_name = request.POST.get('email', '')
             if UserProfile.objects.filter(email=user_name):
@@ -86,4 +86,5 @@ class ActiveUserView(View):
 
 class ForgetPwdView(View):
     def get(self, request):
-        return render(request, 'forgetpwd.html', {})
+        forget_form = ForgetForm()
+        return render(request, 'forgetpwd.html', {'forget_form': forget_form})
