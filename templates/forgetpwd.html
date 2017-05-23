@@ -78,7 +78,7 @@
             </div>
             <div class="fl form-box">
                 <h2>忘记密码</h2>
-                <form id="jsFindPwdForm" method="post" action="forgetpwd.html" autocomplete="off">
+                <form id="jsFindPwdForm" method="post" action="{% url 'forget_pwd' %}" autocomplete="off">
                     <input type='hidden' name='csrfmiddlewaretoken' value='mymQDzHWl2REXIfPMg2mJaLqDfaS1sD5' />
                     <div class="form-group marb20 ">
                         <label>帐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</label>
@@ -89,11 +89,12 @@
                         {{ forget_form.captcha }}
 {#                        <img src="/captcha/image/997454dc58799e806f18d21eac296581a8c6ef02/" alt="captcha" class="captcha" /> <input id="id_captcha_0" name="captcha_0" type="hidden" value="997454dc58799e806f18d21eac296581a8c6ef02" /> <input autocomplete="off" id="id_captcha_1" name="captcha_1" type="text" />#}
                     </div>
-                    <div class="error btns" id="jsForgetTips"></div>
+                    <div class="error btns" id="jsForgetTips">{% for key,error in forget_form.errors.items %}{{ error }}{% endfor %}{{ msg }}</div>
                     <input type="hidden" name="sms_type" value="1">
                     <input class="btn btn-green" id="jsFindPwdBtn" type="submit" value="提交" />
                     <p class="form-p" style="bottom:40px;">您还可以<a href="{% url 'login' %}"> [直接登录]</a></p>
                 <input type='hidden' name='csrfmiddlewaretoken' value='5I2SlleZJOMUX9QbwYLUIAOshdrdpRcy' />
+                    {% csrf_token %}
                 </form>
             </div>
         </div>

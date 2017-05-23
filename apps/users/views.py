@@ -88,3 +88,12 @@ class ForgetPwdView(View):
     def get(self, request):
         forget_form = ForgetForm()
         return render(request, 'forgetpwd.html', {'forget_form': forget_form})
+
+    def post(self, request):
+        forget_form = ForgetForm(request.POST)  # post的form初始化要传入request
+        if forget_form.is_valid():  # 如果forget_form是合法的
+            email = request.POST.get('email', '')
+            send_register_email(email, 'forget')
+            return render(request, 'send_success.html')
+        else:
+            return render(request, 'forgetpwd.html', {'forget_form': forget_form})
