@@ -7,7 +7,7 @@ from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-#区域3：自定义模块
+# 区域3：自定义模块
 
 
 class UserProfile(AbstractUser):  # 重载了用户profile
