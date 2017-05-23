@@ -80,11 +80,11 @@
                 <h2>忘记密码</h2>
                 <form id="jsFindPwdForm" method="post" action="{% url 'forget_pwd' %}" autocomplete="off">
                     <input type='hidden' name='csrfmiddlewaretoken' value='mymQDzHWl2REXIfPMg2mJaLqDfaS1sD5' />
-                    <div class="form-group marb20 ">
+                    <div class="form-group marb20 {% if forget_form.errors.email %}errorput{% endif %}">
                         <label>帐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</label>
-                        <input type="text" id="account" name="email" value="None" placeholder="邮箱" />
+                        <input type="text" id="account" name="email" value="{{ forget_form.email.value }}" placeholder="邮箱" />
                     </div>
-                    <div class="form-group captcha1 marb38">
+                    <div class="form-group captcha1 marb38 {% if forget_form.errors.captcha %}errorput{% endif %}">
                         <label>验&nbsp;证&nbsp;码</label>
                         {{ forget_form.captcha }}
 {#                        <img src="/captcha/image/997454dc58799e806f18d21eac296581a8c6ef02/" alt="captcha" class="captcha" /> <input id="id_captcha_0" name="captcha_0" type="hidden" value="997454dc58799e806f18d21eac296581a8c6ef02" /> <input autocomplete="off" id="id_captcha_1" name="captcha_1" type="text" />#}
