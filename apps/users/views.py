@@ -54,7 +54,7 @@ class RegisterView(View):
         if register_form.is_valid():
             user_name = request.POST.get('email', '')
             if UserProfile.objects.filter(email=user_name):
-                return render(request, 'register.html', {'msg': '该邮箱已经注册，请尝试登录或找回密码'})
+                return render(request, 'register.html', {'msg': '该邮箱已经注册，请尝试登录或找回密码', 'register_form': register_form})
             pass_word = request.POST.get('password', '')  # 取出username和password
 
             user_profile = UserProfile()  # 数据库实例化
