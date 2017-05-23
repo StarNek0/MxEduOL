@@ -1,3 +1,4 @@
+# coding: utf8
 """MxEduOL URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -21,7 +22,7 @@ from django.conf.urls import url, include
 from django.views.generic import TemplateView
 
 # from users.views import user_login
-from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView
+from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
@@ -31,5 +32,7 @@ urlpatterns = [
     url(r'^register/$', RegisterView.as_view(), name='register'),
     url(r'^captcha/', include('captcha.urls')),
     url(r'^active/(?P<active_code>.*)/$', ActiveUserView.as_view(), name='user_active'),
-    url(r'^forger/$', ForgetPwdView.as_view(), name='forget_pwd')
+    url(r'^forget/$', ForgetPwdView.as_view(), name='forget_pwd'),
+    url(r'^reset/(?P<active_code>.*)/$', ResetView.as_view(), name='reset_pwd'),
+    url(r'^modify_pwd/$', ModifyPwdView.as_view(), name='modify_pwd'),  # 智障地import了ModifyForm,然后.as_view() 。。。。。
 ]
