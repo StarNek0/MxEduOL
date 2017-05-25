@@ -149,3 +149,4 @@ EMAIL_HOST_USER = 'mxeduol@163.com'
 EMAIL_HOST_PASSWORD = 'admin123'
 EMAIL_USE_TLS = False
 EMAIL_FROM = 'mxeduol@163.com'
+
