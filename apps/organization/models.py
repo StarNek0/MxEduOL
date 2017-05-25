@@ -23,7 +23,7 @@ class CourseOrg(models.Model):
     desc = models.TextField(verbose_name='机构描述')
     click_num = models.IntegerField(default=0, verbose_name='点击量')
     fav_nums = models.IntegerField(default=0, verbose_name='收藏量')
-    image = models.ImageField(upload_to='org/%Y/%m', verbose_name='封面图', max_length=100)
+    image = models.ImageField(upload_to='org/%Y/%m', verbose_name='logo', max_length=100)
     address = models.CharField(max_length=200, verbose_name='机构地址')
     city = models.ForeignKey(CityDict, verbose_name='所在城市')
     add_time = models.DateTimeField(default=datetime.now)
@@ -31,6 +31,9 @@ class CourseOrg(models.Model):
     class Meta:
         verbose_name = '机构基本信息'
         verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return self.name
 
 
 class Teacher(models.Model):

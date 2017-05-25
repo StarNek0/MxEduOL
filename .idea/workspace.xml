@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="配置资源文件存放路径，添加media文件夹">
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/Entity/2016/11/default_middile_14_20161113173158_261.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/Entity/2016/11/default_middile_1_20161113172604_856.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/Entity/ueditor/default_middile_13_20161113185849_453.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/banner/2016/11/57a801860001c34b12000460.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/banner/2016/11/57a801860001c34b12000460_z4Vb8zl.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/banner/2016/11/57aa86a0000145c512000460.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/banner/2016/11/57aa86a0000145c512000460_GXIBATC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/banner/2016/11/57aa86a0000145c512000460_nMwvoQD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/course/resource/2016/11/curl_wget.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/course/resource/2016/11/media.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/540e57300001d6d906000338-240-135.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/540e57300001d6d906000338-240-135_MSIqfvw.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/540e57300001d6d906000338-240-135_Z3HIQ2t.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/540e57300001d6d906000338-240-135_mvvGYHL.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/540e57300001d6d906000338-240-135_n0L8vbw.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/540e57300001d6d906000338-240-135_wH52IED.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/57035ff200014b8a06000338-240-135.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/57035ff200014b8a06000338-240-135_0nFiBSI.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/default_middile_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/11/mysql.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/12/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/12/mysql.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/12/python文件处理.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/12/python错误和异常.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2016/12/python面向对象.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/ueditor/57a801860001c34b12000460_z4Vb8zl_20161210233313_629.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/ueditor/57aa86a0000145c512000460_20161210234050_865.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/ueditor/aobama_20161113225004_372.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/ueditor/aobama_20161113225044_773.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/2016/11/default_middile_18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/2016/11/default_middile_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/2016/11/default_middile_2_WZ1559E.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/2016/11/default_middile_7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/2016/11/default_middile_8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/2016/12/default_big_14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/bjdx.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/imooc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/imooc_Gn1sRjp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/imooc_OO2ykYP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/imooc_V0TJOyb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/imooc_Y2Tonsq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/imooc_klgAUn5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/imooc_qEaMov1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/njdx.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/11/qhdx-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/12/bjdx.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/12/bjdx_bcd0m07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/12/bjdx_cCpdUw8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/12/imooc_Gn1sRjp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2016/12/imooc_klgAUn5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/1ad5ad6eddc451da26a7118ebffd5266d0163205.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/1ad5ad6eddc451da26a7118ebffd5266d0163205_ChhePiS.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/1ad5ad6eddc451da26a7118ebffd5266d0163205_ChhePiS_wsNnHd6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/bjdx.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/imooc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/qhdx-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/u7043329363690286049fm58s2C875F32D4F47D824AE961460200E0F2bpow121bpoh75.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2016/11/aobama.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2016/11/aobama_CXWwMef.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/settings.py" afterPath="$PROJECT_DIR$/MxEduOL/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/models.py" afterPath="$PROJECT_DIR$/apps/organization/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +100,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,14 +113,14 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
+            <state relative-caret-position="52">
               <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="463">
@@ -166,8 +227,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/MxEduOL/settings.py" />
+        <option value="$PROJECT_DIR$/apps/organization/models.py" />
       </list>
     </option>
   </component>
@@ -979,7 +1040,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495720817280</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="配置资源文件存放路径，添加media文件夹">
+      <created>1495721014315</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1495721014315</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1031,7 +1099,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="6-7 user register-2 part1&#10;实例化验证码插件类，并将之实现在注册的html中" />
     <MESSAGE value="6-7 user register-2 part2&#10;逻辑传值-注册时，数据传给数据库，&#10;csrftoken，&#10;修改herf由&quot;.html&quot;到&quot;{% url ''%}&quot;&quot;" />
     <MESSAGE value="6-7 user register-3 part1&#10;邮件发送的函数：&#10;包括生成校验码，&#10;发送邮件的主题与点击链接" />
     <MESSAGE value="6-9 user register-3 part2&#10;setting里配置邮件服务器用户密码等，&#10;然后邮件发送py里使用内置的邮件发送函数发送邮件" />
@@ -1056,7 +1123,8 @@
     <MESSAGE value="update workspace" />
     <MESSAGE value="update readme.md" />
     <MESSAGE value="修改-添加修改信息时返回的name" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改-添加修改信息时返回的name" />
+    <MESSAGE value="配置资源文件存放路径，添加media文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置资源文件存放路径，添加media文件夹" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1065,20 +1133,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/template/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/core/handlers/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -1442,26 +1496,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+    <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="463">
+          <caret line="153" column="42" lean-forward="false" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
+        <state relative-caret-position="52">
           <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
+    <entry file="file://$PROJECT_DIR$/media/org/2017/05/imooc.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/org/2017/05/1ad5ad6eddc451da26a7118ebffd5266d0163205.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="153" column="42" lean-forward="false" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
+        <state relative-caret-position="104">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
