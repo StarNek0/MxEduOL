@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="url和static路径修改">
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/urls.py" afterPath="$PROJECT_DIR$/MxEduOL/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-list.html" afterPath="$PROJECT_DIR$/templates/org-list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,9 +79,11 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="9" column="81" lean-forward="true" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
-              <folding />
+            <state relative-caret-position="260">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding>
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,9 +91,22 @@
       <file leaf-file-name="org-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/org-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="208">
+              <caret line="320" column="14" lean-forward="true" selection-start-line="320" selection-start-column="14" selection-end-line="320" selection-end-column="14" />
+              <folding>
+                <element signature="e#123#329#0#HTML" expanded="false" />
+                <element signature="e#369#11815#0#HTML" expanded="false" />
+                <element signature="e#2938#2964#0#HTML" expanded="true" />
+                <element signature="e#3029#3055#0#HTML" expanded="true" />
+                <element signature="e#4459#4485#0#HTML" expanded="true" />
+                <element signature="e#4550#4576#0#HTML" expanded="true" />
+                <element signature="e#5985#6011#0#HTML" expanded="true" />
+                <element signature="e#6076#6102#0#HTML" expanded="true" />
+                <element signature="e#7506#7532#0#HTML" expanded="true" />
+                <element signature="e#7597#7623#0#HTML" expanded="true" />
+                <element signature="e#9036#9062#0#HTML" expanded="true" />
+                <element signature="e#9127#9153#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +152,7 @@
       <find>../</find>
       <find>logo</find>
       <find>.html</find>
+      <find>headerw</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/css</replace>
@@ -190,10 +204,10 @@
         <option value="$PROJECT_DIR$/templates/password_reset.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/forgetpwd.html" />
-        <option value="$PROJECT_DIR$/templates/org-list.html" />
         <option value="$PROJECT_DIR$/MxEduOL/urls.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/apps/organization/views.py" />
+        <option value="$PROJECT_DIR$/templates/org-list.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
@@ -985,7 +999,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495711737570</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="创建Org_list的Views，配置url。HTML中的url和static路径修改">
+      <created>1495715629341</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1495715629341</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1038,7 +1059,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="6-1 首页和登录界面&#10;html css js等文件的导入和配置" />
     <MESSAGE value="6-2 &amp; 6-3用户登录界面的配置&#10;包括了:&#10;html页面的修改，与后台逻辑的交互 -&gt; 登录成功与失败在首页是否显示登录注册按钮&#10;csrf验证&#10;&#10;修改登录url&#10;views中登录逻辑判定与跳转页面 -&gt; 包括了ModelBackend引用数据库数据来比对用户名密码信息，CustomBackend使得可以用邮箱判定用户名是否正确" />
     <MESSAGE value="6-4 form来验证登陆&#10;1）把view中的login模块由函数改为类来实现&#10;2）用form来验证用户名密码的长度是否合适" />
     <MESSAGE value="6-5完善上一个commit&#10;使用户为空或长度不符合要求时返回具体的错误信息" />
@@ -1063,22 +1083,16 @@
     <MESSAGE value="完成了重置密码页面,成功重置密码" />
     <MESSAGE value="创建完成模板页面base" />
     <MESSAGE value="title修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="title修改" />
+    <MESSAGE value="创建Org_list的Views，配置url。HTML中的url和static路径修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建Org_list的Views，配置url。HTML中的url和static路径修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/plugins/jquery.raty.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="262" column="7" lean-forward="false" selection-start-line="262" selection-start-column="7" selection-end-line="262" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/utils/functional.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1416,14 +1430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1431,6 +1437,14 @@
           <folding>
             <element signature="e#14#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="513" column="36" lean-forward="true" selection-start-line="513" selection-start-column="36" selection-end-line="513" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,11 +1458,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="320" column="14" lean-forward="true" selection-start-line="320" selection-start-column="14" selection-end-line="320" selection-end-column="14" />
+          <folding>
+            <element signature="e#123#329#0#HTML" expanded="false" />
+            <element signature="e#369#11815#0#HTML" expanded="false" />
+            <element signature="e#2938#2964#0#HTML" expanded="true" />
+            <element signature="e#3029#3055#0#HTML" expanded="true" />
+            <element signature="e#4459#4485#0#HTML" expanded="true" />
+            <element signature="e#4550#4576#0#HTML" expanded="true" />
+            <element signature="e#5985#6011#0#HTML" expanded="true" />
+            <element signature="e#6076#6102#0#HTML" expanded="true" />
+            <element signature="e#7506#7532#0#HTML" expanded="true" />
+            <element signature="e#7597#7623#0#HTML" expanded="true" />
+            <element signature="e#9036#9062#0#HTML" expanded="true" />
+            <element signature="e#9127#9153#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="9" column="81" lean-forward="true" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
-          <folding />
+        <state relative-caret-position="260">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
