@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="数据统计count()与导入到HTML">
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="引入了django-pure-pagination用于分页，&#10;在view中用django-pure-pagination的Paginator函数进行处理，&#10;HTML中从list中取出数据做成页码">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/org/2017/05/images.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/settings.py" afterPath="$PROJECT_DIR$/MxEduOL/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-list.html" afterPath="$PROJECT_DIR$/templates/org-list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,15 +96,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="org-list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="org-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/org-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
               <folding>
                 <element signature="e#516#871#0#HTML" expanded="false" />
                 <element signature="e#947#1257#0#HTML" expanded="false" />
+                <element signature="n#if#0;n#!!top" expanded="false" />
+                <element signature="n#for#1;n#!!top" expanded="false" />
+                <element signature="n#if#2;n#!!top" expanded="false" />
+                <element signature="e#2831#4371#0#HTML" expanded="false" />
+                <element signature="n#if#3;n#!!top" expanded="false" />
+                <element signature="n#for#3;n#!!top" expanded="false" />
+                <element signature="n#if#5;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="3280" column="12" lean-forward="true" selection-start-line="3280" selection-start-column="12" selection-end-line="3280" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -230,6 +248,7 @@
         <option value="$PROJECT_DIR$/MxEduOL/settings.py" />
         <option value="$PROJECT_DIR$/apps/organization/views.py" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -770,13 +789,6 @@
       <updated>1491662444618</updated>
       <workItem from="1493167092977" duration="9000" />
     </task>
-    <task id="LOCAL-00011" summary="register the emails'验证码:)">
-      <created>1492256097364</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1492256097364</updated>
-    </task>
     <task id="LOCAL-00012" summary="5-3 注册users model&#10;-在xadmin页面进行注册Users的各个model并且为其设计显示列的样式：包括list_display控制默认列，search_fields添加搜索框，list_filter强大功能的过滤器。&#10;-重载了class的__Unicode__以让每个model在xadmin中显示自定义名字而不是类名字。&#10;-rename了轮播图中添加时间的变量名字">
       <created>1492258419620</created>
       <option name="number" value="00012" />
@@ -1113,7 +1125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495767618694</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="引入了django-pure-pagination用于分页，&#10;在view中用django-pure-pagination的Paginator函数进行处理，&#10;HTML中从list中取出数据做成页码">
+      <created>1495783719340</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1495783719340</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1176,7 +1195,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加HTML页面-激活链接失效。修改跳转地址" />
     <MESSAGE value="导入找回密码界面，为其配置url，views" />
     <MESSAGE value="修改跳转链接为url方式，图片地址修改" />
     <MESSAGE value="修改跳转链接为url方式" />
@@ -1201,7 +1219,8 @@
     <MESSAGE value="&quot;HTML中取路径的 连接路径&quot;这是依托于setting中的此项配置的" />
     <MESSAGE value="“这样才能把图片正确地显示到网页中”的最后一步，配置urls" />
     <MESSAGE value="数据统计count()与导入到HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据统计count()与导入到HTML" />
+    <MESSAGE value="引入了django-pure-pagination用于分页，&#10;在view中用django-pure-pagination的Paginator函数进行处理，&#10;HTML中从list中取出数据做成页码" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入了django-pure-pagination用于分页，&#10;在view中用django-pure-pagination的Paginator函数进行处理，&#10;HTML中从list中取出数据做成页码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1210,21 +1229,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1582">
-          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/tes.py" />
     <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/core/mail/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1320,14 +1324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="328" column="16" lean-forward="false" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3610">
-          <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1531,6 +1527,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/pure_pagination/paginator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="228" column="16" lean-forward="false" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -1545,14 +1573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/pure_pagination/paginator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1579,12 +1599,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+        <state relative-caret-position="442">
+          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
           <folding>
             <element signature="e#516#871#0#HTML" expanded="false" />
             <element signature="e#947#1257#0#HTML" expanded="false" />
+            <element signature="n#if#0;n#!!top" expanded="false" />
+            <element signature="n#for#1;n#!!top" expanded="false" />
+            <element signature="n#if#2;n#!!top" expanded="false" />
+            <element signature="e#2831#4371#0#HTML" expanded="false" />
+            <element signature="n#if#3;n#!!top" expanded="false" />
+            <element signature="n#for#3;n#!!top" expanded="false" />
+            <element signature="n#if#5;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="3280" column="12" lean-forward="true" selection-start-line="3280" selection-start-column="12" selection-end-line="3280" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
