@@ -13,7 +13,6 @@ class OrgView(View):
     """
     def get(self, request):
         all_orgs = CourseOrg.objects.all()  # 课程机构
-        org_nums = all_orgs.count()  # 课程总数
         all_citys = CityDict.objects.all()  # 城市
 
         # 城市筛选
@@ -26,6 +25,7 @@ class OrgView(View):
         if category:
             all_orgs = all_orgs.filter(category=category)
 
+        org_nums = all_orgs.count()  # 课程总数
         # 对课程机构进行分页
         try:
             page = request.GET.get('page', 1)
