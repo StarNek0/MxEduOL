@@ -40,17 +40,9 @@
 					<div class="more">更多</div>
 					<div class="cont">
                         <a href="?ct="><span class="active2">全部</span></a>
-
-                                <a href="?city=1&ct="><span class="">北京市</span></a>
-
-                                <a href="?city=2&ct="><span class="">上海市</span></a>
-
-                                <a href="?city=3&ct="><span class="">广州市</span></a>
-
-                                <a href="?city=4&ct="><span class="">深圳市</span></a>
-
-                                <a href="?city=5&ct="><span class="">天津市</span></a>
-
+                                {% for city in all_citys %}
+                                    <a href="?city=1&ct="><span class="">{{ city.name }}</span></a>
+                                {% endfor %}
 					</div>
 				</li>
 			</ul>
