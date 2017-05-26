@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="数据统计count()与导入到HTML">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/settings.py" afterPath="$PROJECT_DIR$/MxEduOL/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-list.html" afterPath="$PROJECT_DIR$/templates/org-list.html" />
     </list>
@@ -54,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/apps/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -63,8 +64,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+            <state relative-caret-position="515">
+              <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -74,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="624">
-              <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+              <caret line="40" column="60" lean-forward="false" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
               <folding>
                 <element signature="e#711#724#0" expanded="true" />
               </folding>
@@ -85,8 +86,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="359">
+              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
                 <element signature="e#14#49#0" expanded="true" />
               </folding>
@@ -94,11 +95,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="org-list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/org-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-242">
+              <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+              <folding>
+                <element signature="e#516#871#0#HTML" expanded="false" />
+                <element signature="e#947#1257#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="112">
+              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="e#14#49#0" expanded="true" />
               </folding>
@@ -129,7 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>div class</find>
       <find>div class=&quot;top&quot;</find>
       <find>login</find>
       <find>action</find>
@@ -159,6 +172,7 @@
       <find>&lt;dl class=&quot;des difdes&quot;&gt;</find>
       <find>des difdes</find>
       <find>org/</find>
+      <find>上</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/css</replace>
@@ -210,12 +224,12 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/apps/users/forms.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/MxEduOL/settings.py" />
         <option value="$PROJECT_DIR$/MxEduOL/urls.py" />
-        <option value="$PROJECT_DIR$/apps/organization/views.py" />
-        <option value="$PROJECT_DIR$/templates/org-list.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/apps/users/views.py" />
+        <option value="$PROJECT_DIR$/MxEduOL/settings.py" />
+        <option value="$PROJECT_DIR$/apps/organization/views.py" />
+        <option value="$PROJECT_DIR$/templates/org-list.html" />
       </list>
     </option>
   </component>
@@ -405,7 +419,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SearchEverywhereHistoryKey" value="org-list&#9;FILE&#9;file://E:/djangoProject/MxEduOL/templates/org-list.html&#10;username&#9;null&#9;null&#10;is_staff&#9;null&#9;null&#10;is_active&#9;null&#9;null" />
@@ -756,13 +770,6 @@
       <updated>1491662444618</updated>
       <workItem from="1493167092977" duration="9000" />
     </task>
-    <task id="LOCAL-00010" summary="let's make readme.md difference.">
-      <created>1492254195089</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1492254195090</updated>
-    </task>
     <task id="LOCAL-00011" summary="register the emails'验证码:)">
       <created>1492256097364</created>
       <option name="number" value="00011" />
@@ -1099,7 +1106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495766518803</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="数据统计count()与导入到HTML">
+      <created>1495767618694</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1495767618694</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1129,7 +1143,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28042328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28042328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14926931" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.153125" sideWeight="0.50490886" order="1" side_tool="true" content_ui="tabs" />
@@ -1162,7 +1176,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加逻辑-在判断用户名是否已注册过之后亦在返回注册界面显示验证码信息" />
     <MESSAGE value="添加HTML页面-激活链接失效。修改跳转地址" />
     <MESSAGE value="导入找回密码界面，为其配置url，views" />
     <MESSAGE value="修改跳转链接为url方式，图片地址修改" />
@@ -1187,7 +1200,8 @@
     <MESSAGE value="HTML中取路径的 连接路径" />
     <MESSAGE value="&quot;HTML中取路径的 连接路径&quot;这是依托于setting中的此项配置的" />
     <MESSAGE value="“这样才能把图片正确地显示到网页中”的最后一步，配置urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="“这样才能把图片正确地显示到网页中”的最后一步，配置urls" />
+    <MESSAGE value="数据统计count()与导入到HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据统计count()与导入到HTML" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1196,13 +1210,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/operation/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -1500,14 +1507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1516,40 +1515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-          <folding>
-            <element signature="e#711#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
-          <folding>
-            <element signature="e#516#871#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#14#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1562,12 +1531,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="624">
+          <caret line="40" column="60" lean-forward="false" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding>
+            <element signature="e#711#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/pure_pagination/paginator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="e#14#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+          <folding>
+            <element signature="e#516#871#0#HTML" expanded="false" />
+            <element signature="e#947#1257#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
