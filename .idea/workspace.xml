@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/settings.py" afterPath="$PROJECT_DIR$/MxEduOL/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/urls.py" afterPath="$PROJECT_DIR$/MxEduOL/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,12 +59,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="489">
               <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+              <folding>
+                <element signature="e#711#724#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,7 +195,6 @@
         <option value="$PROJECT_DIR$/templates/password_reset.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/forgetpwd.html" />
-        <option value="$PROJECT_DIR$/MxEduOL/urls.py" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/apps/organization/views.py" />
@@ -193,6 +204,7 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
         <option value="$PROJECT_DIR$/MxEduOL/settings.py" />
+        <option value="$PROJECT_DIR$/MxEduOL/urls.py" />
       </list>
     </option>
   </component>
@@ -733,13 +745,6 @@
       <updated>1491662444618</updated>
       <workItem from="1493167092977" duration="9000" />
     </task>
-    <task id="LOCAL-00007" summary="4-6 design org&amp;techer models&#10;创建了app organization，其models包括了教师信息，机构信息，城市信息，其中存在着外键约束">
-      <created>1491987762474</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1491987762474</updated>
-    </task>
     <task id="LOCAL-00008" summary="4-7 design operation models&#10;创建了app operation，其models包括了用户请求，用户收藏，消息模块，用户课程，课程评论。&#10;修改setting的app_install，添加app索引">
       <created>1491997604616</created>
       <option name="number" value="00008" />
@@ -1076,7 +1081,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495765985384</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="&quot;HTML中取路径的 连接路径&quot;这是依托于setting中的此项配置的">
+      <created>1495766087696</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1495766087696</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1129,7 +1141,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update README.md" />
     <MESSAGE value="添加逻辑-判断用户名是否已注册过" />
     <MESSAGE value="添加逻辑-在判断用户名是否已注册过之后亦在返回注册界面显示验证码信息" />
     <MESSAGE value="添加HTML页面-激活链接失效。修改跳转地址" />
@@ -1154,7 +1165,8 @@
     <MESSAGE value="把数据导入模板" />
     <MESSAGE value="在HTML页面中，放入从数据库取出到Views的动态信息的方法，并删除静态信息" />
     <MESSAGE value="HTML中取路径的 连接路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTML中取路径的 连接路径" />
+    <MESSAGE value="&quot;HTML中取路径的 连接路径&quot;这是依托于setting中的此项配置的" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;HTML中取路径的 连接路径&quot;这是依托于setting中的此项配置的" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1367,14 +1379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/org/2017/05/imooc.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1532,6 +1536,16 @@
         <state relative-caret-position="489">
           <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding>
+            <element signature="e#711#724#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
