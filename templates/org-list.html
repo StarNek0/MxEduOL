@@ -47,7 +47,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="all">共<span class="key">15</span>家</div>
+		<div class="all">共<span class="key">{{ org_nums }}</span>家</div>
 		<div class="butler_list company list">
 		<div class="layout">
 			<div class="head">
@@ -68,7 +68,7 @@
                     <dd>
                         <div class="clearfix">
                              <a href="org-detail-homepage.html">
-                                 <h1>慕课网</h1>
+                                 <h1>{{ course_org.name }}</h1>
                                  <div class="pic fl">
 
                                          <img src="{% static 'images/authentication.png' %}"/>
@@ -80,7 +80,7 @@
                         </div>
                         <ul class="cont">
                             <li class="first"><p class="pic9">课程数：<span>1</span></p><p class="c7">学习人数：<span>1000</span></p></li>
-                            <li class="c8" style="padding-left:18px;">北京市海淀区中关村北大街</li>
+                            <li class="c8" style="padding-left:18px;">{{ course_org.address }}</li>
                             <li class="pic10" style="padding-left:18px;">经典课程：
 
                                     <a href="/diary/19/">c语言基础入门</a>
