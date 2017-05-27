@@ -11,7 +11,7 @@ from operation.models import UserAsk
 #     course_name = forms.CharField(required=True, max_length=50)
 
 
-class AnotherUserAskForm(forms.ModelForm):
+class UserAskForm(forms.ModelForm):
 
     class Meta:
         model = UserAsk

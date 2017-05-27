@@ -5,6 +5,7 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import CourseOrg
 from .models import CityDict
+from .forms import UserAskForm
 
 
 class OrgView(View):
@@ -52,3 +53,10 @@ class OrgView(View):
             'hot_orgs': hot_orgs,
             'sort': sort,
         })
+
+
+class AddUserAskView(View):
+    def post(self, request):
+        userask_form = UserAskForm(request.POST)
+        if userask_form.is_valid():
+            userask_form = userask_form.save(commit=True)
