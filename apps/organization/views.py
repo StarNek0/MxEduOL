@@ -11,8 +11,10 @@ class OrgView(View):
     """
     课程机构列表功能
     """
+
     def get(self, request):
         all_orgs = CourseOrg.objects.all()  # 课程机构
+        hot_orgs = all_orgs.order_by('-click_num')[:3]
         all_citys = CityDict.objects.all()  # 城市
 
         # 城市筛选
@@ -24,6 +26,13 @@ class OrgView(View):
         category = request.GET.get('ct', '')
         if category:
             all_orgs = all_orgs.filter(category=category)
+
+        sort = request.GET.get('sort', "")
+        if sort:
+            if sort == "students":
+                all_orgs = all_orgs.order_by('-students')
+            elif sort == "courses":
+                all_orgs = all_orgs.order_by('-course_nums')
 
         org_nums = all_orgs.count()  # 课程总数
         # 对课程机构进行分页
@@ -40,4 +49,6 @@ class OrgView(View):
             'org_nums': org_nums,
             'city_id': city_id,
             'category': category,
+            'hot_orgs': hot_orgs,
+            'sort': sort,
         })
