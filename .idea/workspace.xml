@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="课程咨询的开发，js果然强大。forms正则匹配处理手机号。views咨询逻辑。">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0005_course_course_org.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/org-detail-course.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/org-detail-desc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/org-detail-homepage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/org-detail-teachers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/org_base.html" />
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="添加课程机构教师等数据。修改models。添加base等HTML页面。">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/models.py" afterPath="$PROJECT_DIR$/apps/courses/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/models.py" afterPath="$PROJECT_DIR$/apps/organization/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/urls.py" afterPath="$PROJECT_DIR$/apps/organization/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-detail-homepage.html" afterPath="$PROJECT_DIR$/templates/org-detail-homepage.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,11 +56,9 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-              <folding>
-                <element signature="e#72#113#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="156">
+              <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,8 +88,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1118">
-              <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="-1393">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#14#49#0" expanded="true" />
               </folding>
@@ -120,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/templates/org_base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -131,14 +124,13 @@
       <file leaf-file-name="org-detail-homepage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="88" column="4" lean-forward="false" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+            <state relative-caret-position="533">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
-                <element signature="e#93#2616#0#HTML" expanded="false" />
-                <element signature="e#2621#3457#0#HTML" expanded="false" />
-                <element signature="e#2914#3068#0#HTML" expanded="false" />
-                <element signature="e#3081#3421#0#HTML" expanded="false" />
-                <element signature="e#3462#5119#0#HTML" expanded="false" />
+                <element signature="e#2690#3526#0#HTML" expanded="false" />
+                <element signature="e#2983#3137#0#HTML" expanded="false" />
+                <element signature="e#3150#3490#0#HTML" expanded="false" />
+                <element signature="e#3531#5188#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -243,15 +235,15 @@
         <option value="$PROJECT_DIR$/MxEduOL/urls.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/apps/organization/urls.py" />
         <option value="$PROJECT_DIR$/apps/organization/forms.py" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/apps/organization/views.py" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/apps/courses/models.py" />
         <option value="$PROJECT_DIR$/templates/org_base.html" />
+        <option value="$PROJECT_DIR$/apps/organization/urls.py" />
         <option value="$PROJECT_DIR$/templates/org-detail-homepage.html" />
+        <option value="$PROJECT_DIR$/apps/organization/views.py" />
       </list>
     </option>
   </component>
@@ -686,13 +678,6 @@
       <updated>1491662444618</updated>
       <workItem from="1493167092977" duration="9000" />
     </task>
-    <task id="LOCAL-00023" summary="6-7 user register-2 part1&#10;实例化验证码插件类，并将之实现在注册的html中">
-      <created>1495355309599</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1495355309599</updated>
-    </task>
     <task id="LOCAL-00024" summary="6-7 user register-2 part2&#10;逻辑传值-注册时，数据传给数据库，&#10;csrftoken，&#10;修改herf由&quot;.html&quot;到&quot;{% url ''%}&quot;&quot;">
       <created>1495366881381</created>
       <option name="number" value="00024" />
@@ -1029,7 +1014,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495957270676</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="添加课程机构教师等数据。修改models。添加base等HTML页面。">
+      <created>1496009544129</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1496009544130</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1118,7 +1110,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="将内容从base转移到org_list，使base变成真正的base" />
     <MESSAGE value="update workspace" />
     <MESSAGE value="修改-添加修改信息时返回的name" />
     <MESSAGE value="配置资源文件存放路径，添加media文件夹" />
@@ -1143,7 +1134,8 @@
     <MESSAGE value="update readme rate" />
     <MESSAGE value="配置ask_views的urls" />
     <MESSAGE value="课程咨询的开发，js果然强大。forms正则匹配处理手机号。views咨询逻辑。" />
-    <option name="LAST_COMMIT_MESSAGE" value="课程咨询的开发，js果然强大。forms正则匹配处理手机号。views咨询逻辑。" />
+    <MESSAGE value="添加课程机构教师等数据。修改models。添加base等HTML页面。" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加课程机构教师等数据。修改models。添加base等HTML页面。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1431,16 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding>
-            <element signature="e#72#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/db/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1493,10 +1475,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
-          <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        <state relative-caret-position="-1393">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
           </folding>
@@ -1516,7 +1506,7 @@
     <entry file="file://$PROJECT_DIR$/templates/org_base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -1525,14 +1515,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="88" column="4" lean-forward="false" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        <state relative-caret-position="533">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
-            <element signature="e#93#2616#0#HTML" expanded="false" />
-            <element signature="e#2621#3457#0#HTML" expanded="false" />
-            <element signature="e#2914#3068#0#HTML" expanded="false" />
-            <element signature="e#3081#3421#0#HTML" expanded="false" />
-            <element signature="e#3462#5119#0#HTML" expanded="false" />
+            <element signature="e#2690#3526#0#HTML" expanded="false" />
+            <element signature="e#2983#3137#0#HTML" expanded="false" />
+            <element signature="e#3150#3490#0#HTML" expanded="false" />
+            <element signature="e#3531#5188#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

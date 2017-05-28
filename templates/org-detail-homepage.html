@@ -7,7 +7,7 @@
 			<a class="green fr more" href="org-detail-course.html">查看更多  >  </a>
 		</div>
 		<div class="brief group_list">
-
+            {% for course in all_courses %}
                 <div class="module1_5 box">
                     <a href="course-detail.html"><img width="214" src="../media/courses/2016/11/mysql.jpg"/></a>
                     <div class="des">
@@ -23,6 +23,8 @@
                         </span>
                     </div>
                 </div>
+            {% endfor %}
+
 
                 <div class="module1_5 box">
                     <a href="course-detail.html"><img width="214" src="../media/courses/2016/11/540e57300001d6d906000338-240-135_mvvGYHL.jpg"/></a>
