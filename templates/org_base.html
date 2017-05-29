@@ -25,15 +25,15 @@
 					<div class="fl">
                         <p>联系方式：<b>3333333333</b></p>
                     </div>
-                    <a style="color:white" class="fr registerbtn" href="register.html">注册</a>
-                    <a style="color:white" class="fr loginbtn" href="login.html">登录</a>
+                    <a style="color:white" class="fr registerbtn" href="{% url 'register' %}">注册</a>
+                    <a style="color:white" class="fr loginbtn" href="{% url 'login' %}">登录</a>
 				</div>
 			</div>
 
 
     <div class="middle companyheader">
         <div class="wp">
-            <img class="fl" style="width: 112px;height: 103px" src="/media/org/2016/11/imooc.png"/>
+            <img class="fl" style="width: 112px;height: 103px" src="{{ MEDIA_URL }}{{ course_org.image }}"/>
             <div class="head fl">
                 <h1>
                     慕课网
@@ -59,8 +59,8 @@
 <section>
 	<div class="wp">
 		<ul  class="crumbs">
-            <li><a href="index.html">首页</a>></li>
-			<li><a href="org-list.html">课程机构</a>></li>
+            <li><a href="{% url 'index' %}">首页</a>></li>
+			<li><a href="{% url 'org:org_list' %}">课程机构</a>></li>
 			<li>{% block page_path %}机构首页{% endblock %}</li>
 		</ul>
 	</div>
@@ -70,15 +70,16 @@
 	<div class="wp list personal_list comp">
 		<div class="left">
 			<ul>
-				<li class="active2"><a href="org-detail-homepage.html">机构首页</a></li>
+				<li class="active2"><a href="{% url 'org:org_home' course_org.id %}">机构首页</a></li>
                 <li class=""><a href="org-detail-course.html">机构课程</a></li>
                 <li class=""><a href="org-detail-desc.html">机构介绍</a></li>
                 <li class=""><a href="org-detail-teachers.html">机构讲师</a></li>
 			</ul>
 		</div>
-{% block right_form%}
 
-{% endblock %}
+    {% block right_form%}
+
+    {% endblock %}
 
 </section>
 <!--sidebar start-->
@@ -137,7 +138,7 @@ $(function(){
         score = $precision.attr('data-star-scope'),
         option =  {
                     half		: true,
-                    path		: '../images/',
+                    path		: '{% static 'images/' %}',
                     precision	: true,
                     size		: 24,
                     starOff		: 'g_star.png',
