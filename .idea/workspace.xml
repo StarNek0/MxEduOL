@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="media路径不显示图片。。只能去掉../的..">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2017/05/git_hell.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2017/05/github.7433692cabbfa132f34adb034e7909fa_ekK5zq9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/courses/2017/05/github.7433692cabbfa132f34adb034e7909fa_kwFXe04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0006_auto_20170529_1733.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0007_auto_20170529_1738.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/organization/migrations/0004_teacher_image.py" />
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2017/05/kt1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/models.py" afterPath="$PROJECT_DIR$/apps/organization/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/urls.py" afterPath="$PROJECT_DIR$/apps/organization/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-detail-course.html" afterPath="$PROJECT_DIR$/templates/org-detail-course.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-detail-homepage.html" afterPath="$PROJECT_DIR$/templates/org-detail-homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-list.html" afterPath="$PROJECT_DIR$/templates/org-list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org_base.html" afterPath="$PROJECT_DIR$/templates/org_base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,8 +71,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
               <folding>
                 <element signature="e#72#113#0" expanded="true" />
               </folding>
@@ -100,8 +93,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="76" column="45" lean-forward="false" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+            <state relative-caret-position="505">
+              <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
               <folding>
                 <element signature="e#14#49#0" expanded="true" />
               </folding>
@@ -109,24 +102,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="org-detail-homepage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="org_base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/org_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="org-detail-homepage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+            <state relative-caret-position="108">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="26" selection-end-column="24" />
               <folding>
-                <element signature="e#2134#3789#0#HTML" expanded="false" />
+                <element signature="e#357#1186#0#HTML" expanded="false" />
+                <element signature="e#2329#2335#0#HTML" expanded="true" />
+                <element signature="e#2336#2342#0#HTML" expanded="true" />
+                <element signature="e#2367#2373#0#HTML" expanded="true" />
+                <element signature="e#2374#2380#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="org_base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/org_base.html">
+      <file leaf-file-name="org-detail-course.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/org-detail-course.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="153" column="31" lean-forward="false" selection-start-line="153" selection-start-column="31" selection-end-line="153" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="78">
+              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,7 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;dl class=&quot;des difdes&quot;&gt;</find>
       <find>des difdes</find>
       <find>org/</find>
       <find>上</find>
@@ -184,6 +192,7 @@
       <find>{% url</find>
       <find>{% url 'org</find>
       <find>发表</find>
+      <find>机构介绍</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/css</replace>
@@ -243,12 +252,13 @@
         <option value="$PROJECT_DIR$/apps/organization/forms.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/apps/courses/models.py" />
-        <option value="$PROJECT_DIR$/apps/organization/urls.py" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
-        <option value="$PROJECT_DIR$/templates/org_base.html" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
-        <option value="$PROJECT_DIR$/apps/organization/views.py" />
         <option value="$PROJECT_DIR$/templates/org-detail-homepage.html" />
+        <option value="$PROJECT_DIR$/apps/organization/urls.py" />
+        <option value="$PROJECT_DIR$/templates/org-detail-course.html" />
+        <option value="$PROJECT_DIR$/apps/organization/views.py" />
+        <option value="$PROJECT_DIR$/templates/org_base.html" />
       </list>
     </option>
   </component>
@@ -748,13 +758,6 @@
       <updated>1491662444618</updated>
       <workItem from="1493167092977" duration="9000" />
     </task>
-    <task id="LOCAL-00026" summary="6-9 user register-3 part2&#10;setting里配置邮件服务器用户密码等，&#10;然后邮件发送py里使用内置的邮件发送函数发送邮件">
-      <created>1495370471267</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1495370471267</updated>
-    </task>
     <task id="LOCAL-00027" summary="6-10 user register-4 part1&#10;forms-修改了最小密码长度从8到6，&#10;修复了不显示errorput的bug，&#10;注册成功后返回登录界面。">
       <created>1495373862733</created>
       <option name="number" value="00027" />
@@ -1091,7 +1094,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496049416941</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="课程机构详情页的各种跳转和显示逻辑 &amp;&amp; add-models-column">
+      <created>1496056275199</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1496056275199</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1180,7 +1190,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="配置资源文件存放路径，添加media文件夹" />
     <MESSAGE value="添加media资源文件，增加return self.name" />
     <MESSAGE value="增加-models内机构的机构类别" />
     <MESSAGE value="从models取出所有的相关数据" />
@@ -1205,7 +1214,8 @@
     <MESSAGE value="添加课程机构教师等数据。修改models。添加base等HTML页面。" />
     <MESSAGE value="设计机构首页views，url配置不完全" />
     <MESSAGE value="media路径不显示图片。。只能去掉../的.." />
-    <option name="LAST_COMMIT_MESSAGE" value="media路径不显示图片。。只能去掉../的.." />
+    <MESSAGE value="课程机构详情页的各种跳转和显示逻辑 &amp;&amp; add-models-column" />
+    <option name="LAST_COMMIT_MESSAGE" value="课程机构详情页的各种跳转和显示逻辑 &amp;&amp; add-models-column" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1214,13 +1224,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/password_reset.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="910">
@@ -1555,16 +1558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#72#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -1573,10 +1566,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+          <folding>
+            <element signature="e#72#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#357#1186#0#HTML" expanded="false" />
+            <element signature="e#2329#2335#0#HTML" expanded="true" />
+            <element signature="e#2336#2342#0#HTML" expanded="true" />
+            <element signature="e#2367#2373#0#HTML" expanded="true" />
+            <element signature="e#2374#2380#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org-detail-course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="76" column="45" lean-forward="false" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+        <state relative-caret-position="505">
+          <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
           </folding>
@@ -1585,19 +1612,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/org_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="153" column="31" lean-forward="false" selection-start-line="153" selection-start-column="31" selection-end-line="153" selection-end-column="31" />
+        <state relative-caret-position="130">
+          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="e#2134#3789#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
