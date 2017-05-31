@@ -80,6 +80,7 @@ class OrgHomeView(View):
         if request.user.is_authenticated():
             if UserFavourite.objects.filter(user=request.user, fav_id=course_org.id, fav_type=2):
                 has_fav = True
+
         all_courses = course_org.course_set.all()[:3]
         all_teachers = course_org.teacher_set.all()[:1]  # 这里控制取出的老师数量
         return render(request, 'org-detail-homepage.html', {
@@ -96,11 +97,19 @@ class OrgCourseView(View):
     def get(self, request, org_id):
         current_page = 'course'
         course_org = CourseOrg.objects.get(id=int(org_id))
+
+        # 收藏判断
+        has_fav = False
+        if request.user.is_authenticated():
+            if UserFavourite.objects.filter(user=request.user, fav_id=course_org.id, fav_type=2):
+                has_fav = True
+
         all_courses = course_org.course_set.all()
         return render(request, 'org-detail-course.html', {
             'all_courses': all_courses,
             'course_org': course_org,
             'current_page': current_page,
+            'has_fav': has_fav,
         })
 
 
@@ -109,9 +118,17 @@ class OrgDescView(View):
     def get(self, request, org_id):
         current_page = 'desc'
         course_org = CourseOrg.objects.get(id=int(org_id))
+
+        # 收藏判断
+        has_fav = False
+        if request.user.is_authenticated():
+            if UserFavourite.objects.filter(user=request.user, fav_id=course_org.id, fav_type=2):
+                has_fav = True
+
         return render(request, 'org-detail-desc.html', {
             'course_org': course_org,
             'current_page': current_page,
+            'has_fav': has_fav,
         })
 
 
@@ -120,11 +137,19 @@ class OrgTeacherView(View):
     def get(self, request, org_id):
         current_page = 'teacher'
         course_org = CourseOrg.objects.get(id=int(org_id))
+
+        # 收藏判断
+        has_fav = False
+        if request.user.is_authenticated():
+            if UserFavourite.objects.filter(user=request.user, fav_id=course_org.id, fav_type=2):
+                has_fav = True
+
         all_teachers = course_org.teacher_set.all()
         return render(request, 'org-detail-teachers.html', {
             'all_teachers': all_teachers,
             'course_org': course_org,
             'current_page': current_page,
+            'has_fav': has_fav,
         })
 
 
