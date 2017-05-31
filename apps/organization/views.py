@@ -74,6 +74,12 @@ class OrgHomeView(View):
     def get(self, request, org_id):
         current_page = 'home'
         course_org = CourseOrg.objects.get(id=int(org_id))
+
+        # 收藏判断
+        has_fav = False
+        if request.user.is_authenticated():
+            if UserFavourite.objects.filter(user=request.user, fav_id=course_org.id, fav_type=2):
+                has_fav = True
         all_courses = course_org.course_set.all()[:3]
         all_teachers = course_org.teacher_set.all()[:1]  # 这里控制取出的老师数量
         return render(request, 'org-detail-homepage.html', {
@@ -81,6 +87,7 @@ class OrgHomeView(View):
             'all_teachers': all_teachers,
             'course_org': course_org,
             'current_page': current_page,
+            'has_fav': has_fav,
         })
 
 
@@ -124,21 +131,24 @@ class OrgTeacherView(View):
 class AddFavView(View):
     # 用户收藏
     def post(self, request):
-        fav_id = request.POST.get('fav_id ', 0)  # 因为空字符转换为int，后面联合查询filter会抛出异常。故用0为默认值。
+        fav_id = request.POST.get('fav_id', 0)  # 因为空字符转换为int，后面联合查询filter会抛出异常。故用0为默认值。
+        # MDZZ fav_id后面多打了一个空格导致。。。fav_id取不到值
         fav_type = request.POST.get('fav_type', 0)
 
         if not request.user.is_authenticated():
             # 判断用户登录状态
             return HttpResponse('{"status":"fail", "msg":"用户未登录"}', content_type="application/json")
 
-        exist_records = UserFavourite.objects.filter(user=request, fav_id=int(fav_id), fav_type=int(fav_type))
+        exist_records = UserFavourite.objects.filter(user=request.user, fav_id=int(fav_id), fav_type=int(fav_type))
         if exist_records:
             # 如果记录已经存在，取消收藏
             exist_records.delete()
-            return HttpResponse('{"status":"fail", "msg":"收藏"}', content_type="application/json")
+            return HttpResponse('{"status":"success", "msg":"收藏"}', content_type="application/json")
+            # 这里用success才能实时更新
         else:
             user_fav = UserFavourite()
             if (int(fav_id) > 0) and (int(fav_type) > 0):
+                user_fav.user = request.user
                 user_fav.fav_id = int(fav_id)
                 user_fav.fav_type = int(fav_type)
                 user_fav.save()
