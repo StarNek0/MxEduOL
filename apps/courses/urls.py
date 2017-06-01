@@ -2,10 +2,10 @@
 # __author__ = 'zsdostar'
 # __date__ = '2017/6/1 17:05'
 
-from django.conf.urls import url, include
+from django.conf.urls import url
 
-from .views import OrgView, AddUserAskView, OrgHomeView, OrgCourseView, OrgDescView, OrgTeacherView, AddFavView
+from .views import CourseListView
 
 urlpatterns = [
-    url(r'^list/$', OrgView.as_view(), name='org_list'),
+    url(r'^list/$', CourseListView.as_view(), name='course_list'),
 ]
