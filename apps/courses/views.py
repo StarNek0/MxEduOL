@@ -4,6 +4,7 @@ from django.views.generic.base import View
 
 from .models import Course
 
+
 class CourseListView(View):
     def get(self, request):
         all_courses = Course.objects.all()
