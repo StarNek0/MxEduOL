@@ -39,6 +39,7 @@ class OrgView(View):
                 all_orgs = all_orgs.order_by('-course_nums')
 
         org_nums = all_orgs.count()  # 课程总数
+
         # 对课程机构进行分页
         try:
             page = request.GET.get('page', 1)
