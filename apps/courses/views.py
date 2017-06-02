@@ -10,7 +10,7 @@ class CourseListView(View):
     def get(self, request):
         all_courses = Course.objects.all().order_by('-add_time')  # 这里的orderby直接按添加时间倒序排序
 
-        sort = request.GET.get('sort', "")
+        sort = request.GET.get('order', "")  # HTML中的在URL中声明的变量是提交到这里进行判断的
         if sort:
             if sort == "students":
                 all_courses = all_courses.order_by('-students')
