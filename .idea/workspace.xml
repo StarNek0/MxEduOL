@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="从models取出所有数据并传递到HTML页面">
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/views.py" afterPath="$PROJECT_DIR$/apps/courses/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course-list.html" afterPath="$PROJECT_DIR$/templates/course-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-list.html" afterPath="$PROJECT_DIR$/templates/org-list.html" />
     </list>
     <ignored path=".idea/dataSources/8d727994-8761-46cd-b584-5fcd987baea4.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-249">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -102,8 +98,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="234">
+              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
                 <element signature="e#16#51#0" expanded="true" />
               </folding>
@@ -124,21 +120,11 @@
       <file leaf-file-name="course-list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/course-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="496">
+              <caret line="69" column="58" lean-forward="false" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#9;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#10;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#11;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
+                <element signature="e#2067#2073#0#HTML" expanded="true" />
+                <element signature="e#2073#2079#0#HTML" expanded="true" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -750,13 +736,6 @@
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
     </task>
-    <task id="LOCAL-00039" summary="完成了重置密码的邮件发送页面，邮件成功发送。&#10;添加了邮件发送页面的显示表单错误逻辑">
-      <created>1495547712841</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1495547712841</updated>
-    </task>
     <task id="LOCAL-00040" summary="完成了重置密码页面,成功重置密码">
       <created>1495552106090</created>
       <option name="number" value="00040" />
@@ -1093,7 +1072,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496309980201</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="配置跳转路径等，样式修改，title修改">
+      <created>1496386291547</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1496386291548</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1174,7 +1160,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加了顶部的页码，修改了style.css使其样式不那么磕碜" />
     <MESSAGE value="update readme.md" />
     <MESSAGE value="添加机构和城市的筛选功能，并联合筛选" />
     <MESSAGE value="根据筛选显示当前机构数量，修正了由于css修改导致无法正常显示数量的问题" />
@@ -1199,7 +1184,8 @@
     <MESSAGE value="基础跳转url，HTMLstatic路径修改" />
     <MESSAGE value="修改HTML为继承base.html" />
     <MESSAGE value="从models取出所有数据并传递到HTML页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="从models取出所有数据并传递到HTML页面" />
+    <MESSAGE value="配置跳转路径等，样式修改，title修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置跳转路径等，样式修改，title修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1488,28 +1474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#16#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-249">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1538,23 +1506,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#16#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="496">
+          <caret line="69" column="58" lean-forward="false" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#9;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#10;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#11;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
+            <element signature="e#2067#2073#0#HTML" expanded="true" />
+            <element signature="e#2073#2079#0#HTML" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
           </folding>
         </state>
