@@ -34,3 +34,9 @@ class CourseListView(View):
             'sort': sort,
             'hot_courses': hot_courses,
         })
+
+
+class CourseDetailView(View):
+    # 课程详情页
+    def get(self, request):
+        return render(request, 'course-detail.html', {})
