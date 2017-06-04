@@ -8,4 +8,6 @@ from .views import CourseListView
 
 urlpatterns = [
     url(r'^list/$', CourseListView.as_view(), name='course_list'),
+    # 课程详情
+    url(r'^detail/(?<course_id>\d+)$', CourseListView.as_view(), name='detail'),
 ]
