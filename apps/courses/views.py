@@ -38,5 +38,5 @@ class CourseListView(View):
 
 class CourseDetailView(View):
     # 课程详情页
-    def get(self, request):
+    def get(self, request, course_id):
         return render(request, 'course-detail.html', {})
