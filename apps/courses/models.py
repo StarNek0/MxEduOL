@@ -17,11 +17,15 @@ class Course(models.Model):
     fav_nums = models.IntegerField(default=0, verbose_name='收藏人数')
     Image = models.ImageField(upload_to='courses/%Y/%m', verbose_name='课程描述图', max_length=100)
     click_nums = models.IntegerField(default=0, verbose_name='点击数')
+    category = models.CharField(default="void", max_length=20, verbose_name="课程类别")
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     def get_zj_nums(self):
         # 获取课程的章节数：外键用xxx_set方法
         return self.lesson_set.all().count()
+
+    def get_learn_users(self):
+        return self.usercourse_set.all()[:5]
 
     def __unicode__(self):
         return self.name
@@ -42,6 +46,7 @@ class Lesson(models.Model):
 
     def __unicode__(self):
         return self.name
+
 
 class Video(models.Model):
     lesson = models.ForeignKey(Lesson, verbose_name='章节')
