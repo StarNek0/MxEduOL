@@ -19,6 +19,10 @@ class Course(models.Model):
     click_nums = models.IntegerField(default=0, verbose_name='点击数')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
+    def get_zj_nums(self):
+        # 获取课程的章节数：外键用xxx_set方法
+        return self.lesson_set.all().count()
+
     def __unicode__(self):
         return self.name
 
@@ -36,6 +40,8 @@ class Lesson(models.Model):
         verbose_name = '章节'
         verbose_name_plural = verbose_name
 
+    def __unicode__(self):
+        return self.name
 
 class Video(models.Model):
     lesson = models.ForeignKey(Lesson, verbose_name='章节')
