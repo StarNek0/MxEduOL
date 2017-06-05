@@ -54,14 +54,14 @@
 
                     </div>
                     <div class="des">
-                        <h1 title="django 从入门到精通体验开始了">django与vuejs实战项目2</h1>
-                        <span class="key">Python除了简单操作外，还可以做更多事情，本计划中，将带领大家探索Python，让大家掌握如何操作数据库，了解Python WEB网页开发的框架，如何编写爬虫，从大量信息中自动获取所需数据。 Python</span>
+                        <h1 title="django 从入门到精通体验开始了">{{ course.name }}</h1>
+                        <span class="key">{{ course.desc }}</span>
                         <div class="prize">
-                            <span class="fl">难度：<i class="key">高级</i></span>
-                            <span class="fr">学习人数：12</span>
+                            <span class="fl">难度：<i class="key">{{ course.get_degree_display }}</i></span>
+                            <span class="fr">学习人数：{{ course.students }}</span>
                         </div>
                         <ul class="parameter">
-                            <li><span class="pram word3">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长：</span><span>0</span></li>
+                            <li><span class="pram word3">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长：</span><span>{{ course.learn_time }}</span></li>
                             <li><span class="pram word3">章&nbsp;节&nbsp;数：</span><span>5</span></li>
                             <li><span class="pram word3">课程类别：</span><span title="">web开发/后端开发</span></li>
                             <li class="piclist"><span class="pram word4">学习用户：</span>
