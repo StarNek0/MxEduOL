@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.views.generic.base import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
+from django.db.models import Q
+
 from .models import Course
 
 
@@ -40,8 +42,19 @@ class CourseDetailView(View):
     # 课程详情页
     def get(self, request, course_id):
         course = Course.objects.get(id=int(course_id))
+
         course.click_nums += 1
         course.save()
+
+        course_hour = course.learn_time/60
+
+        type = course.category
+        if type:
+            near_type_courses = Course.objects.filter(category=type)[:3]
+        else:
+            near_type_courses = []  # 这里不能传字符串，必须是迭代器，不然出错
         return render(request, 'course-detail.html', {
             'course': course,
+            'course_hour': course_hour,
+            'near_type_courses': near_type_courses,
         })

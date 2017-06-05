@@ -24,7 +24,7 @@ class Course(models.Model):
         # 获取课程的章节数：外键用xxx_set方法
         return self.lesson_set.all().count()
 
-    def get_learn_users(self):
+    def get_learn_users(self):  # 获取该课的学生
         return self.usercourse_set.all()[:5]
 
     def __unicode__(self):
