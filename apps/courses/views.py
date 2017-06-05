@@ -6,7 +6,7 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 
 from .models import Course
-
+from operation.models import UserFavourite, CourseComments, UserCourse
 
 class CourseListView(View):
     def get(self, request):
@@ -47,6 +47,18 @@ class CourseDetailView(View):
         course.save()
 
         course_hour = course.learn_time/60
+
+        # 是否收藏课程
+        has_fav_course = False
+        # 是否收藏机构
+        has_fav_org = False
+
+        if request.user.is_authenticated():
+            if UserFavourite.objects.filter(user=request.user, fav_id=course.id, fav_type=1):
+                has_fav_course = True
+
+            if UserFavourite.objects.filter(user=request.user, fav_id=course.course_org.id, fav_type=2):
+                has_fav_org = True
 
         type = course.category
         if type:
