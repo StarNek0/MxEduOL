@@ -2,12 +2,12 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
-	<title>慕学在线 - 忘记密码</title>
-	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>慕学在线 - 忘记密码</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
 </head>
 <body>
 <!--提示弹出框-->
@@ -38,10 +38,10 @@
         </div>
         <div class="error btns" id="jsSetNewPwdTips"></div>
         <div class="button">
-            <input type="hidden" name="mobile" id="jsInpResetMobil" />
-            <input id="jsSetNewPwdBtn" type="button" value="提交" />
+            <input type="hidden" name="mobile" id="jsInpResetMobil"/>
+            <input id="jsSetNewPwdBtn" type="button" value="提交"/>
         </div>
-        <input type='hidden' name='csrfmiddlewaretoken' value='mymQDzHWl2REXIfPMg2mJaLqDfaS1sD5' />
+        <input type='hidden' name='csrfmiddlewaretoken' value='mymQDzHWl2REXIfPMg2mJaLqDfaS1sD5'/>
     </form>
 </div>
 <div class="bg" id="dialogBg"></div>
@@ -68,9 +68,12 @@
             <div class="fl slide">
                 <div class="imgslide">
                     <ul class="imgs">
-                        <li><a href=""><img width="483" height="472" src="/static/images/57a801860001c34b12000460.jpg" /></a></li>
-                        <li><a href=""><img width="483" height="472" src="/static/images/57a801860001c34b12000460.jpg" /></a></li>
-                        <li><a href=""><img width="483" height="472" src="/static/images/57a801860001c34b12000460.jpg" /></a></li>
+                        <li><a href=""><img width="483" height="472" src="/static/images/57a801860001c34b12000460.jpg"/></a>
+                        </li>
+                        <li><a href=""><img width="483" height="472" src="/static/images/57a801860001c34b12000460.jpg"/></a>
+                        </li>
+                        <li><a href=""><img width="483" height="472" src="/static/images/57a801860001c34b12000460.jpg"/></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="unslider-arrow prev"></div>
@@ -79,21 +82,23 @@
             <div class="fl form-box">
                 <h2>忘记密码</h2>
                 <form id="jsFindPwdForm" method="post" action="{% url 'forget_pwd' %}" autocomplete="off">
-                    <input type='hidden' name='csrfmiddlewaretoken' value='mymQDzHWl2REXIfPMg2mJaLqDfaS1sD5' />
+                    <input type='hidden' name='csrfmiddlewaretoken' value='mymQDzHWl2REXIfPMg2mJaLqDfaS1sD5'/>
                     <div class="form-group marb20 {% if forget_form.errors.email %}errorput{% endif %}">
                         <label>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
-                        <input type="text" id="account" name="email" value="{{ forget_form.email.value }}" placeholder="邮箱" />
+                        <input type="text" id="account" name="email" value="{{ forget_form.email.value }}"
+                               placeholder="邮箱"/>
                     </div>
                     <div class="form-group captcha1 marb38 {% if forget_form.errors.captcha %}errorput{% endif %}">
                         <label>验&nbsp;证&nbsp;码</label>
                         {{ forget_form.captcha }}
-{#                        <img src="/captcha/image/997454dc58799e806f18d21eac296581a8c6ef02/" alt="captcha" class="captcha" /> <input id="id_captcha_0" name="captcha_0" type="hidden" value="997454dc58799e806f18d21eac296581a8c6ef02" /> <input autocomplete="off" id="id_captcha_1" name="captcha_1" type="text" />#}
+                        {#                        <img src="/captcha/image/997454dc58799e806f18d21eac296581a8c6ef02/" alt="captcha" class="captcha" /> <input id="id_captcha_0" name="captcha_0" type="hidden" value="997454dc58799e806f18d21eac296581a8c6ef02" /> <input autocomplete="off" id="id_captcha_1" name="captcha_1" type="text" />#}
                     </div>
-                    <div class="error btns" id="jsForgetTips">{% for key,error in forget_form.errors.items %}{{ error }}{% endfor %}{{ msg }}</div>
+                    <div class="error btns" id="jsForgetTips">
+                        {% for key,error in forget_form.errors.items %}{{ error }}{% endfor %}{{ msg }}</div>
                     <input type="hidden" name="sms_type" value="1">
-                    <input class="btn btn-green" id="jsFindPwdBtn" type="submit" value="提交" />
+                    <input class="btn btn-green" id="jsFindPwdBtn" type="submit" value="提交"/>
                     <p class="form-p" style="bottom:40px;">您还可以<a href="{% url 'login' %}"> [直接登录]</a></p>
-                <input type='hidden' name='csrfmiddlewaretoken' value='5I2SlleZJOMUX9QbwYLUIAOshdrdpRcy' />
+                    <input type='hidden' name='csrfmiddlewaretoken' value='5I2SlleZJOMUX9QbwYLUIAOshdrdpRcy'/>
                     {% csrf_token %}
                 </form>
             </div>
@@ -104,7 +109,7 @@
 <input id="isLogin" type="hidden" value="False"/>
 <script src="/static/js/jquery.min.js" type="text/javascript"></script>
 <script src="/static/js/unslider.js" type="text/javascript"></script>
-<script src="/static/js/validateDialog.js"  type="text/javascript"></script>
-<script src="/static/js/login.js"  type="text/javascript"></script>
+<script src="/static/js/validateDialog.js" type="text/javascript"></script>
+<script src="/static/js/login.js" type="text/javascript"></script>
 </body>
 </html>

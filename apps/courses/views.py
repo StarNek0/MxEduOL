@@ -53,6 +53,7 @@ class CourseDetailView(View):
         # 是否收藏机构
         has_fav_org = False
 
+        # 以下为课程详情页面的两个收藏功能
         if request.user.is_authenticated():
             if UserFavourite.objects.filter(user=request.user, fav_id=course.id, fav_type=1):
                 has_fav_course = True
@@ -60,11 +61,13 @@ class CourseDetailView(View):
             if UserFavourite.objects.filter(user=request.user, fav_id=course.course_org.id, fav_type=2):
                 has_fav_org = True
 
+        # 以下为相似课程推荐
         type = course.category
         if type:
             near_type_courses = Course.objects.filter(category=type)[:3]
         else:
             near_type_courses = []  # 这里不能传字符串，必须是迭代器，不然出错
+
         return render(request, 'course-detail.html', {
             'course': course,
             'course_hour': course_hour,
