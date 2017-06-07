@@ -101,24 +101,24 @@
                         </div>
                         <div id="course_note">
                             <ul class="mod-post" id="comment-list">
-                            {% for comment in all_comments %}
-                                <li class="post-row">
-                                    <div class="media">
+                                {% for comment in all_comments %}
+                                    <li class="post-row">
+                                        <div class="media">
                                     <span target="_blank"><img src='{{ MEDIA_URL }}{{ comment.user.image }}'
                                                                width='40' height='40'/></span>
-                                    </div>
-                                    <div class="bd">
-                                        <div class="tit">
-                                            <span target="_blank">{{ comment.user.username }}</span>
                                         </div>
-                                        <p class="cnt">
-                                            {{ comment.comments }}</p>
-                                        <div class="footer clearfix">
-                                            <span title="创建时间" class="l timeago">时间：{{ comment.add_time }}</span>
+                                        <div class="bd">
+                                            <div class="tit">
+                                                <span target="_blank">{{ comment.user.username }}</span>
+                                            </div>
+                                            <p class="cnt">
+                                                {{ comment.comments }}</p>
+                                            <div class="footer clearfix">
+                                                <span title="创建时间" class="l timeago">时间：{{ comment.add_time }}</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            {% endfor %}
+                                    </li>
+                                {% endfor %}
 
                             </ul>
                         </div>

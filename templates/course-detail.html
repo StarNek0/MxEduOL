@@ -218,6 +218,7 @@
                     <div class="head">相关课程推荐</div>
                     <div class="group_recommend">
                         {% for near_type_course in near_type_courses %}
+                            {% if not near_type_course.id == course.id %}
                             <dl>
                                 <dt>
                                     <a target="_blank" href="">
@@ -230,6 +231,7 @@
                                     <span class="fl">学习时长：<i class="key">{{ near_type_course.learn_time }}分钟</i></span>
                                 </dd>
                             </dl>
+                            {% endif %}
                         {% endfor %}
 
                     </div>
