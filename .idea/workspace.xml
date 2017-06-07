@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="添加登录验证类来继承他">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/utils/mixin_utils.py" />
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/views.py" afterPath="$PROJECT_DIR$/apps/courses/views.py" />
     </list>
@@ -115,8 +113,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+            <state relative-caret-position="235">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="e#16#51#0" expanded="true" />
               </folding>
@@ -830,13 +828,6 @@
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
     </task>
-    <task id="LOCAL-00067" summary="namespace。。。。出了bug一定要到处多看看挑挑错">
-      <created>1495899312916</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1495899312916</updated>
-    </task>
     <task id="LOCAL-00068" summary="views中很简单的提交表单到数据库的方法，相对应于之前forms中的ModelForm">
       <created>1495899920993</created>
       <option name="number" value="00068" />
@@ -1173,7 +1164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496838592156</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="添加登录验证类来继承他">
+      <created>1496839211746</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1496839211746</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1262,7 +1260,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="分页模块在HTML中的使用，如何取呢，内容就是.object_list，页码就是.pages" />
     <MESSAGE value="按最新，热门，人数分别进行排序。默认为时间则可以在views中直接order_by('')" />
     <MESSAGE value="HTML中的在URL中声明的变量是提交到这里进行判断的" />
     <MESSAGE value="机构、课程、讲师之间还没做关联" />
@@ -1287,7 +1284,8 @@
     <MESSAGE value="课程章节信息PLUS&#10;1.课程基本信息动态显示&#10;2.reformate code&#10;3.删除冗余的静态数据,换成动态数据&#10;4.添加视频时间信息Models，views添加资源展示，可以下载，下载地址路径跟图片是一个格式{{ MEDIA_URL }}{{ course_resource.download }}&#10;5.models之间没有任何关联，那么就要在models里添加外键，mm&#10;6.讲师静态数据换成动态数据，添加两个models，mm" />
     <MESSAGE value="课程评论&#10;1.URL页面，配置views，继承base，动态路径，动态内容&#10;2.JS代码内的参数要和Views里面的POST.get数据名称对应&#10;3.成功完成了评论的添加评论和显示" />
     <MESSAGE value="1.学过这门课的人还学过----可真费劲啊&#10;2.老师的评论有BUG，他的各个课的评论互通了，已修复&#10;3.老师的相似课程有BUG，他的相似课程推荐包括这个课本身，已修复（并集查询的每一个集合都要加Q() &amp; Q()）" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.学过这门课的人还学过----可真费劲啊&#10;2.老师的评论有BUG，他的各个课的评论互通了，已修复&#10;3.老师的相似课程有BUG，他的相似课程推荐包括这个课本身，已修复（并集查询的每一个集合都要加Q() &amp; Q()）" />
+    <MESSAGE value="添加登录验证类来继承他" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加登录验证类来继承他" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1303,11 +1301,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/media/org/2016/11/imooc.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="889">
@@ -1424,21 +1417,6 @@
         <state relative-caret-position="215">
           <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="49">
-            <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1693,10 +1671,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/db/models/options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="299" column="16" lean-forward="false" selection-start-line="299" selection-start-column="16" selection-end-line="299" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+        <state relative-caret-position="235">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#16#51#0" expanded="true" />
           </folding>
