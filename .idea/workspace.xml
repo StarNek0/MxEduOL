@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/video-js.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/video.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/course-play.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/urls.py" afterPath="$PROJECT_DIR$/apps/courses/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/views.py" afterPath="$PROJECT_DIR$/apps/courses/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course-detail.html" afterPath="$PROJECT_DIR$/templates/course-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course-video.html" afterPath="$PROJECT_DIR$/templates/course-video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path=".idea/dataSources/8d727994-8761-46cd-b584-5fcd987baea4.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,135 +76,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/courses/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-              <folding>
-                <element signature="e#71#103#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-              <folding>
-                <element signature="e#14#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="105" column="40" lean-forward="true" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
-              <folding>
-                <element signature="e#16#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-play.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/course-play.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
-              <folding>
-                <element signature="n#nav#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#3642#3648#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mixin_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/utils/mixin_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-              <folding>
-                <element signature="e#14#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-video.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/course-video.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-              <folding>
-                <element signature="n#nav#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#!!top" expanded="false" />
-                <element signature="e#5822#5828#0#HTML" expanded="true" />
-                <element signature="e#5828#5834#0#HTML" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding>
-                <element signature="n#block#1;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-comment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/course-comment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="103" column="58" lean-forward="false" selection-start-line="103" selection-start-column="58" selection-end-line="103" selection-end-column="58" />
-              <folding>
-                <element signature="e#2114#2120#0#HTML" expanded="true" />
-                <element signature="e#2120#2126#0#HTML" expanded="true" />
-                <element signature="e#6357#6363#0#HTML" expanded="true" />
-                <element signature="e#6363#6369#0#HTML" expanded="true" />
-                <element signature="e#6922#7504#0#HTML" expanded="false" />
-                <element signature="e#7537#8084#0#HTML" expanded="false" />
-                <element signature="e#9315#9810#0#HTML" expanded="false" />
-                <element signature="e#9855#10350#0#HTML" expanded="false" />
-                <element signature="e#10395#10895#0#HTML" expanded="false" />
-                <element signature="e#10940#11442#0#HTML" expanded="false" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="51">
+                <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -230,8 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>机构介绍</find>
-      <find>layout&quot;</find>
       <find>is_</find>
       <find>MEDIA_</find>
       <find>down</find>
@@ -260,6 +132,8 @@
       <find>courses</find>
       <find>info</find>
       <find>资料</find>
+      <find>_bl</find>
+      <find>该课</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/css</replace>
@@ -305,7 +179,6 @@
         <option value="$USER_HOME$/Desktop/shiyanlou.py" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/apps/organization/views.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/active_fail.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/course-list.html" />
@@ -329,9 +202,10 @@
         <option value="$PROJECT_DIR$/static/js/video.min.js" />
         <option value="$PROJECT_DIR$/apps/courses/urls.py" />
         <option value="$PROJECT_DIR$/apps/courses/views.py" />
-        <option value="$PROJECT_DIR$/templates/course-play.html" />
         <option value="$PROJECT_DIR$/templates/course-video.html" />
         <option value="$PROJECT_DIR$/templates/course-detail.html" />
+        <option value="$PROJECT_DIR$/templates/course-play.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -374,20 +248,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MxEduOL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MxEduOL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MxEduOL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -854,20 +714,6 @@
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
     </task>
-    <task id="LOCAL-00069" summary="update readme rate">
-      <created>1495899976633</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1495899976633</updated>
-    </task>
-    <task id="LOCAL-00070" summary="配置ask_views的urls">
-      <created>1495900462916</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1495900462916</updated>
-    </task>
     <task id="LOCAL-00071" summary="课程咨询的开发，js果然强大。forms正则匹配处理手机号。views咨询逻辑。">
       <created>1495957270675</created>
       <option name="number" value="00071" />
@@ -1197,7 +1043,21 @@
       <option name="project" value="LOCAL" />
       <updated>1496840613665</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="完成了播放页面的开发，（还有个问题没解决：在videoplay页面的点评论时，会跳转回章节页面的评论页）&#10;动态替换了title">
+      <created>1496843682469</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1496843682469</updated>
+    </task>
+    <task id="LOCAL-00119" summary="修该了此界面的推荐课程展示">
+      <created>1496843764273</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1496843764273</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1286,8 +1146,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HTML中的在URL中声明的变量是提交到这里进行判断的" />
-    <MESSAGE value="机构、课程、讲师之间还没做关联" />
     <MESSAGE value="HTML中右边的推荐。特别注意，choice类型要取.get_xxx_display" />
     <MESSAGE value="导入现成的课程详情页HTML" />
     <MESSAGE value="reformat" />
@@ -1311,7 +1169,9 @@
     <MESSAGE value="1.学过这门课的人还学过----可真费劲啊&#10;2.老师的评论有BUG，他的各个课的评论互通了，已修复&#10;3.老师的相似课程有BUG，他的相似课程推荐包括这个课本身，已修复（并集查询的每一个集合都要加Q() &amp; Q()）" />
     <MESSAGE value="添加登录验证类来继承他" />
     <MESSAGE value="查询是否学习了该课程，如果没有学习，则设置该学生学习了该课程" />
-    <option name="LAST_COMMIT_MESSAGE" value="查询是否学习了该课程，如果没有学习，则设置该学生学习了该课程" />
+    <MESSAGE value="完成了播放页面的开发，（还有个问题没解决：在videoplay页面的点评论时，会跳转回章节页面的评论页）&#10;动态替换了title" />
+    <MESSAGE value="修该了此界面的推荐课程展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="修该了此界面的推荐课程展示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1590,16 +1450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#14#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -1613,7 +1463,7 @@
         <state relative-caret-position="261">
           <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
-            <element signature="e#14#53#0" expanded="true" />
+            <element signature="e#14#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1623,16 +1473,12 @@
         <state relative-caret-position="260">
           <caret line="103" column="58" lean-forward="false" selection-start-line="103" selection-start-column="58" selection-end-line="103" selection-end-column="58" />
           <folding>
-            <element signature="e#2114#2120#0#HTML" expanded="true" />
-            <element signature="e#2120#2126#0#HTML" expanded="true" />
-            <element signature="e#6357#6363#0#HTML" expanded="true" />
-            <element signature="e#6363#6369#0#HTML" expanded="true" />
+            <element signature="e#2114#2120#0#HTML" expanded="false" />
+            <element signature="e#2120#2126#0#HTML" expanded="false" />
+            <element signature="e#6357#6363#0#HTML" expanded="false" />
+            <element signature="e#6363#6369#0#HTML" expanded="false" />
             <element signature="e#6922#7504#0#HTML" expanded="false" />
             <element signature="e#7537#8084#0#HTML" expanded="false" />
-            <element signature="e#9315#9810#0#HTML" expanded="false" />
-            <element signature="e#9855#10350#0#HTML" expanded="false" />
-            <element signature="e#10395#10895#0#HTML" expanded="false" />
-            <element signature="e#10940#11442#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1645,29 +1491,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/video-js.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="40365" lean-forward="false" selection-start-line="0" selection-start-column="40365" selection-end-line="0" selection-end-column="40365" />
           <folding>
-            <element signature="e#402#5395#1" expanded="true" />
-            <element signature="e#5411#13113#1" expanded="true" />
+            <element signature="e#402#5395#1" expanded="false" />
+            <element signature="e#5411#13113#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1687,16 +1517,8 @@
         <state relative-caret-position="209">
           <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
           <folding>
-            <element signature="e#71#103#0" expanded="true" />
+            <element signature="e#71#103#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/mixin_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1711,17 +1533,37 @@
     <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
-          <caret line="105" column="40" lean-forward="true" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+          <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
           <folding>
             <element signature="e#16#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="n#block#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#14#53#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="173">
+          <caret line="168" column="48" lean-forward="true" selection-start-line="168" selection-start-column="48" selection-end-line="168" selection-end-column="90" />
           <folding>
             <element signature="n#nav#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#!!top" expanded="false" />
@@ -1733,26 +1575,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
+    <entry file="file://$PROJECT_DIR$/apps/utils/mixin_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="n#block#1;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="156">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-play.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        <state relative-caret-position="416">
+          <caret line="155" column="61" lean-forward="false" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="61" />
           <folding>
             <element signature="n#nav#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="e#3642#3648#0#HTML" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
