@@ -151,12 +151,14 @@
                   <!-- 学过其他的课程循环 -->
                   <ul class="other-list">
                     {% for relate_course in relate_courses %}
+                        {% if not relate_course.id == course.id %}
                     <li class="curr">
                       <a href="{% url 'course:course_detail' relate_course.id %}" target="_blank">
-                        <img src="{{ MEDIA_URL }}{{ relate_course.image }}"  alt="{{ relate_course.name }}" />
+                        <img src="{{ MEDIA_URL }}{{ relate_course.Image }}"  alt="{{ relate_course.name }}" />
                         <span class="name autowrap">{{ relate_course.name }}</span>
                       </a>
                     </li>
+                        {% endif %}
                     {% endfor %}
 
                   </ul>
