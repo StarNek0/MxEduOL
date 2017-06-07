@@ -8,7 +8,7 @@ from django.http import HttpResponse
 
 from .models import Course, CourseResource
 from operation.models import UserFavourite, CourseComments, UserCourse
-
+from utils.mixin_utils import LoginRequiredMixin  # 登录验证
 
 class CourseListView(View):
     def get(self, request):
@@ -79,7 +79,7 @@ class CourseDetailView(View):
         })
 
 
-class CourseInfoView(View):
+class CourseInfoView(LoginRequiredMixin, View):  # 这里的继承顺序很重要
     # 课程章节信息
     def get(self, request, course_id):
         course = Course.objects.get(id=int(course_id))
@@ -99,7 +99,7 @@ class CourseInfoView(View):
         })
 
 
-class CommentsView(View):
+class CommentsView(LoginRequiredMixin, View):  # 这里的继承顺序很重要
     # 课程评论页面
     def get(self, request, course_id):
         course = Course.objects.get(id=int(course_id))
