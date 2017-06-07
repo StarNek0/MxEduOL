@@ -5,8 +5,9 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 from django.db.models import Q
 
-from .models import Course
+from .models import Course, CourseResource
 from operation.models import UserFavourite, CourseComments, UserCourse
+
 
 class CourseListView(View):
     def get(self, request):
@@ -81,7 +82,8 @@ class CourseInfoView(View):
     # 课程章节信息
     def get(self, request, course_id):
         course = Course.objects.get(id=int(course_id))
+        all_resources = CourseResource.objects.filter(course=course)
         return render(request, 'course-video.html', {
             'course': course,
-
+            'course_resources': all_resources,
         })

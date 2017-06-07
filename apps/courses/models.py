@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from datetime import datetime
 
 from django.db import models
-from organization.models import CourseOrg
+from organization.models import CourseOrg, Teacher
 
 
 class Course(models.Model):
@@ -11,6 +11,7 @@ class Course(models.Model):
     name = models.CharField(max_length=50, verbose_name='课程名')
     desc = models.CharField(max_length=300, verbose_name='课程描述')
     detail = models.TextField(verbose_name='课程详情')  # TextField 无限大不限制长度
+    teacher = models.ForeignKey(Teacher, verbose_name='课程讲师', null=True, blank=True)
     degree = models.CharField(max_length=2, choices=(('cj', '初级'), ('zj', '中级'), ('gj', '高级')), verbose_name='课程难度')
     learn_time = models.IntegerField(default=0, verbose_name='学习时长-分钟数')
     students = models.IntegerField(default=0, verbose_name='学习人数')
@@ -18,6 +19,9 @@ class Course(models.Model):
     Image = models.ImageField(upload_to='courses/%Y/%m', verbose_name='课程描述图', max_length=100)
     click_nums = models.IntegerField(default=0, verbose_name='点击数')
     category = models.CharField(default="void", max_length=20, verbose_name="课程类别")
+    youneed_know = models.TextField(default='', max_length=300, verbose_name='课程须知')
+    teacher_tell = models.TextField(default='', max_length=300, verbose_name='讲师说')
+
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     def get_zj_nums(self):
@@ -44,6 +48,9 @@ class Lesson(models.Model):
     name = models.CharField(max_length=100, verbose_name='章节名')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
+    def get_lesson_video(self):
+        return self.video_set.all()
+
     class Meta:
         verbose_name = '章节'
         verbose_name_plural = verbose_name
@@ -56,6 +63,7 @@ class Video(models.Model):
     lesson = models.ForeignKey(Lesson, verbose_name='章节')
     name = models.CharField(max_length=100, verbose_name='视频名称')
     url = models.CharField(max_length=200, default='', verbose_name='访问地址')
+    learn_time = models.IntegerField(default=0, verbose_name='学习时长-分钟数')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     class Meta:
