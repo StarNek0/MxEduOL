@@ -21,11 +21,15 @@ class Course(models.Model):
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     def get_zj_nums(self):
-        # 获取课程的章节数：外键用xxx_set方法
+        # 获取课程的章节数量：外键用xxx_set方法
         return self.lesson_set.all().count()
 
     def get_learn_users(self):  # 获取该课的学生
         return self.usercourse_set.all()[:5]
+
+    def get_course_lesson(self):
+        # 获取章节信息
+        return self.lesson_set.all()
 
     def __unicode__(self):
         return self.name
@@ -51,11 +55,15 @@ class Lesson(models.Model):
 class Video(models.Model):
     lesson = models.ForeignKey(Lesson, verbose_name='章节')
     name = models.CharField(max_length=100, verbose_name='视频名称')
+    url = models.CharField(max_length=200, default='', verbose_name='访问地址')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
 
     class Meta:
         verbose_name = '视频'
         verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return self.name
 
 
 class CourseResource(models.Model):
@@ -67,4 +75,7 @@ class CourseResource(models.Model):
     class Meta:
         verbose_name = '课程资源'
         verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return self.name
 
