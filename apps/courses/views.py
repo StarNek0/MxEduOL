@@ -6,9 +6,10 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.http import HttpResponse
 
-from .models import Course, CourseResource
+from .models import Course, CourseResource, Video
 from operation.models import UserFavourite, CourseComments, UserCourse
 from utils.mixin_utils import LoginRequiredMixin  # 登录验证
+
 
 class CourseListView(View):
     def get(self, request):
@@ -84,6 +85,9 @@ class CourseInfoView(LoginRequiredMixin, View):  # 这里的继承顺序很重�
     def get(self, request, course_id):
         course = Course.objects.get(id=int(course_id))
 
+        course.students += 1
+        course.save()
+
         # 查询是否学习了该课程
         user_courses = UserCourse.objects.filter(user=request.user, course=course)
         if not user_courses:
@@ -139,3 +143,31 @@ class AddCommentView(View):
             return HttpResponse('{"status":"success", "msg":"评论成功"}', content_type='application/json')
         else:
             return HttpResponse('{"status":"fail", "msg":"评论失败"}', content_type='application/json')
+
+
+class VideoPlayView(View):
+    def get(self, request, video_id):
+        video = Video.objects.get(id=int(video_id))
+        course = video.lesson.course
+
+        # 查询是否学习了该课程
+        user_courses = UserCourse.objects.filter(user=request.user, course=course)
+        if not user_courses:
+            user_course = UserCourse(user=request.user, course=course)
+            user_course.save()
+
+        # 相似课程筛选
+        user_courses = UserCourse.objects.filter(course=course)  # 从课程里取出所有属于这门课的行信息
+        user_ids = [user_course.user.id for user_course in user_courses]  # 把这门课的用户id取出来
+        all_user_courses = UserCourse.objects.filter(user_id__in=user_ids)  # 以这个id为条件筛选所有的课程
+        course_ids = [user_couser.course.id for user_couser in all_user_courses]  # 取出这些课程id
+        # and finally
+        relate_courses = Course.objects.filter(id__in=course_ids).order_by("-click_nums")[:5]  # 获取学过该用户学过其他的所有课程并排序显示
+
+        all_resources = CourseResource.objects.filter(course=course)
+        return render(request, 'course-play.html', {
+            'course': course,
+            'course_resources': all_resources,
+            'relate_courses': relate_courses,
+            'video': video,
+        })

@@ -4,7 +4,7 @@
 
 from django.conf.urls import url
 
-from .views import CourseListView, CourseDetailView, CourseInfoView, CommentsView, AddCommentView
+from .views import CourseListView, CourseDetailView, CourseInfoView, CommentsView, AddCommentView, VideoPlayView
 
 urlpatterns = [
     url(r'^list/$', CourseListView.as_view(), name='course_list'),
@@ -16,4 +16,7 @@ urlpatterns = [
     url(r'^comment/(?P<course_id>\d+)/$', CommentsView.as_view(), name="course_comment"),
     # 添加评论 因为course_id已经放到POST中了，所以这里不需要了
     url(r'^add_comment/$', AddCommentView.as_view(), name="add_comment"),
+
+    url(r'^video/(?P<video_id>\d+)/$', VideoPlayView.as_view(), name="video_play"),
+
 ]
