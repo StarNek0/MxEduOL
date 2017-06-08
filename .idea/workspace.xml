@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2017/06/121f0f3a3259025f35cfa817673b8e00_b.jpeg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2017/06/20130714170710_HvaaE.jpeg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2017/06/5333a1d100010c2602000200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2017/06/533e4bec0001ae5302000200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2017/06/545847990001d46402200220.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/teacher/2017/06/jetpack-octocat-airlock-b1d6ad7f41f88e5207896fe1f63ca30b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/organization/migrations/0005_teacher_age.py" />
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="依然是分页功能">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/models.py" afterPath="$PROJECT_DIR$/apps/organization/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/urls.py" afterPath="$PROJECT_DIR$/apps/organization/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/teachers-list.html" afterPath="$PROJECT_DIR$/templates/teachers-list.html" />
     </list>
@@ -101,8 +92,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="190" column="29" lean-forward="false" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
+            <state relative-caret-position="297">
+              <caret line="192" column="13" lean-forward="false" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
               <folding>
                 <element signature="e#14#49#0" expanded="true" />
               </folding>
@@ -123,9 +114,21 @@
       <file leaf-file-name="teachers-list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/teachers-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="63" column="49" lean-forward="true" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+            <state relative-caret-position="286">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="org-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/org-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="134" selection-end-column="26" />
+              <folding>
+                <element signature="e#5400#6680#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MEDIA_</find>
       <find>down</find>
       <find>js</find>
       <find>js/</find>
@@ -175,6 +177,7 @@
       <find>_bl</find>
       <find>该课</find>
       <find>class=&quot;wp&quot;</find>
+      <find>all_orgs</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/css</replace>
@@ -185,6 +188,7 @@
       <replace>all_courses</replace>
       <replace>极慕客</replace>
       <replace>{% static '' %}</replace>
+      <replace>all_teachers</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -244,8 +248,8 @@
         <option value="$PROJECT_DIR$/templates/course-play.html" />
         <option value="$PROJECT_DIR$/templates/course-video.html" />
         <option value="$PROJECT_DIR$/apps/organization/urls.py" />
-        <option value="$PROJECT_DIR$/apps/organization/views.py" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
+        <option value="$PROJECT_DIR$/apps/organization/views.py" />
         <option value="$PROJECT_DIR$/templates/teachers-list.html" />
       </list>
     </option>
@@ -715,13 +719,6 @@
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
     </task>
-    <task id="LOCAL-00074" summary="media路径不显示图片。。只能去掉../的..">
-      <created>1496049416941</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1496049416941</updated>
-    </task>
     <task id="LOCAL-00075" summary="课程机构详情页的各种跳转和显示逻辑 &amp;&amp; add-models-column">
       <created>1496056275199</created>
       <option name="number" value="00075" />
@@ -1058,7 +1055,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496913717367</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="动态显示所有讲师基本信息，添加models内容，">
+      <created>1496915172475</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1496915172475</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1147,7 +1151,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="URL" />
     <MESSAGE value="Views" />
     <MESSAGE value="debug misscare" />
     <MESSAGE value="修改网页跳转路径，debugZZ错误" />
@@ -1172,7 +1175,8 @@
     <MESSAGE value="update md" />
     <MESSAGE value="导入两个HTML，对其中的教师list进行修改" />
     <MESSAGE value="设计教师列表页面的URL和Views，并配置其他页面到教师列表页面的路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计教师列表页面的URL和Views，并配置其他页面到教师列表页面的路径" />
+    <MESSAGE value="动态显示所有讲师基本信息，添加models内容，" />
+    <option name="LAST_COMMIT_MESSAGE" value="动态显示所有讲师基本信息，添加models内容，" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1483,14 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-detail-desc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1539,16 +1535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="190" column="29" lean-forward="false" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
-          <folding>
-            <element signature="e#14#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1567,10 +1553,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="192" column="13" lean-forward="false" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
+          <folding>
+            <element signature="e#14#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="134" selection-end-column="26" />
+          <folding>
+            <element signature="e#5400#6680#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/teachers-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="63" column="49" lean-forward="true" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+        <state relative-caret-position="286">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding />
         </state>
       </provider>

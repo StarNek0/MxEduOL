@@ -189,6 +189,15 @@ class TeacherListView(View):
     # 授课教师列表页
     def get(self, request):
         all_teachers = Teacher.objects.all()
+
+        #分页功能
+        try:
+            page = request.GET.get('page', 1)
+        except PageNotAnInteger:
+            page = 1
+        p = Paginator(all_teachers, 5, request=request)
+        teachers = p.page(page)
+
         return render(request, 'teachers-list.html', {
-            'all_teachers': all_teachers,
+            'all_teachers': teachers,
         })

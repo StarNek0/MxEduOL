@@ -49,7 +49,7 @@
                         </ul>
                         <div class="fr butler-num">共<span class="key">9</span>人&nbsp;&nbsp;&nbsp;</div>
                     </div>
-                    {% for teacher in all_teachers %}
+                    {% for teacher in all_teachers.object_list %}
                     <dl class="des">
                         <dt>
                             <a href="/org/teacher/detail/1/">
@@ -86,21 +86,32 @@
                     {% endfor %}
 
                 </div>
+
                 <div class="pageturn">
-                    <ul class="pagelist">
+                        <ul class="pagelist">
+                            {% if all_teachers.has_previous %}
+                                <li class="long"><a href="?{{ all_teachers.previous_page_number.querystring }}">上一页</a></li>
+                            {% endif %}
 
+                            {% for page in all_teachers.pages %}
+                                {% if page %}
+                                    {% ifequal page all_teachers.number %}
+                                        <li class="active"><a href="?{{ page.querystring }}">{{ page }}</a></li>
+                                    {% else %}
+                                        <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li>
+                                    {% endifequal %}
+                                {% else %}
+                                    <li class="none"><a href="" class="page">...</a></li>
+                                {% endif %}
+                            {% endfor %}
 
-                        <li class="active"><a href="?page=1">1</a></li>
+                            {% if all_teachers.has_next %}
+                                <li class="long"><a href="?{{ all_teachers.next_page_number.querystring }}">下一页</a></li>
+                            {% endif %}
 
+                        </ul>
+                    </div>
 
-                        <li><a href="?page=2" class="page">2</a></li>
-
-
-                        <li class="long"><a href="?page=2">下一页</a></li>
-
-
-                    </ul>
-                </div>
             </div>
             <div class="right layout">
                 <div class="head">讲师排行榜</div>
