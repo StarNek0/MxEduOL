@@ -220,7 +220,9 @@ class TeacherListView(View):
 
 class TeacherDetailView(View):
     def get(self, request, teacher_id):
-        teacher = CourseOrg.objects.get(id=int(teacher_id))
+        teacher = Teacher.objects.get(id=int(teacher_id))
+        teacher_rank = Teacher.objects.all().order_by('-click_num')[:3]
         return render(request, 'teacher-detail.html', {
             'teacher': teacher,
+            'teacher_rank': teacher_rank,
         })

@@ -81,7 +81,7 @@
                                 <li>教学特点：<span>{{ teacher.points }}</span></li>
                             </ul>
                         </dd>
-                        <a class="buy buyservice" href="/org/teacher/detail/1/"><br/>查看<br/>详情</a>
+                        <a class="buy buyservice" href="{% url 'org:teacher_detail' teacher.id %}"><br/>查看<br/>详情</a>
                     </dl>
                     {% endfor %}
 
