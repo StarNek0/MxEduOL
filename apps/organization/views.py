@@ -190,7 +190,19 @@ class TeacherListView(View):
     def get(self, request):
         all_teachers = Teacher.objects.all()
 
-        #分页功能
+        # 课程总数
+        teacher_nums = all_teachers.count()
+
+        # 按需排序功能
+        sort = request.GET.get('sort', "")
+        if sort:
+            if sort == "hot":
+                all_teachers = all_teachers.order_by('-click_num')
+
+        # 讲师排行榜
+        teacher_rank = all_teachers.order_by('-click_num')[:3]
+
+        # 分页功能
         try:
             page = request.GET.get('page', 1)
         except PageNotAnInteger:
@@ -200,4 +212,7 @@ class TeacherListView(View):
 
         return render(request, 'teachers-list.html', {
             'all_teachers': teachers,
+            'teacher_rank': teacher_rank,
+            'teacher_nums': teacher_nums,
+            'sort': sort,
         })

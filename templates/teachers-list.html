@@ -44,10 +44,10 @@
                 <div class="butler_list layout">
                     <div class="head">
                         <ul class="fl tab_header">
-                            <li class="active"><a href="?sort=">全部</a></li>
-                            <li><a href="?sort=hot">人气 &#8595;</a></li>
+                            <li {% if sort == '' %}class="active" {% endif %}><a href="?sort=">全部</a></li>
+                            <li {% if sort == 'hot' %}class="active" {% endif %}><a href="?sort=hot">人气 &#8595;</a></li>
                         </ul>
-                        <div class="fr butler-num">共<span class="key">9</span>人&nbsp;&nbsp;&nbsp;</div>
+                        <div class="fr butler-num">共<span class="key">{{ teacher_nums }}</span>人&nbsp;&nbsp;&nbsp;</div>
                     </div>
                     {% for teacher in all_teachers.object_list %}
                     <dl class="des">
@@ -115,40 +115,23 @@
             </div>
             <div class="right layout">
                 <div class="head">讲师排行榜</div>
-
+                {% for teacher in teacher_rank %}
                 <dl class="des">
-                    <span class="num fl">1</span>
+                    <span class="num fl">{{ forloop.counter }}</span>
                     <a href="/diary/hk_detail/6/">
                         <dt>
                             <img width="50" height="50" class="scrollLoading"
-                                 src="../media/teacher/2016/11/aobama_CXWwMef.png"/>
+                                 src="{{ MEDIA_URL }}{{ teacher.image }}"/>
                         </dt>
                     </a>
                     <dd>
                         <a href="/diary/hk_detail/6/">
-                            <h1 title="bobby">bobby</h1>
+                            <h1 title="{{ teacher.name }}">{{ teacher.name }}</h1>
                         </a>
-                        <p>工作年限：<span>5年</span></p>
+                        <p>经验：<span>{{ teacher.work_years }}年</span></p>
                     </dd>
                 </dl>
-
-                <dl class="des">
-                    <span class="num fl">1</span>
-                    <a href="/diary/hk_detail/6/">
-                        <dt>
-                            <img width="50" height="50" class="scrollLoading"
-                                 src="../media/teacher/2016/11/aobama.png"/>
-                        </dt>
-                    </a>
-                    <dd>
-                        <a href="/diary/hk_detail/6/">
-                            <h1 title="还是bobby">还是bobby</h1>
-                        </a>
-                        <p>工作年限：<span>5年</span></p>
-                    </dd>
-                </dl>
-
-
+                {% endfor %}
             </div>
         </div>
     </section>
