@@ -6,7 +6,9 @@ from django.http import HttpResponse
 
 from .models import CourseOrg
 from .models import CityDict
+from .models import Teacher
 from operation.models import UserFavourite
+
 from .forms import UserAskForm
 from courses.models import Course
 
@@ -181,3 +183,12 @@ class AddFavView(View):
                 return HttpResponse('{"status":"success", "msg":"已收藏"}', content_type="application/json")
             else:
                 return HttpResponse('{"status":"fail", "msg":"收藏出错"}', content_type="application/json")
+
+
+class TeacherListView(View):
+    # 授课教师列表页
+    def get(self, request):
+        teachers = Teacher.objects.all()
+        return render(request, 'teachers-list.html', {
+            'teachers': teachers,
+        })
