@@ -14,5 +14,3 @@ Navicat|11.0.10
 Then is the packages for Environmental dependence Version:
 
 <img src="https://github.com/zsdostar/MxEduOL/raw/master/image/PackagesVersion.png" />
-
-打造的技术亮点'%desktop%/社区Web产品计划书.md'
