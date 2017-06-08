@@ -4,7 +4,8 @@
 
 from django.conf.urls import url, include
 
-from .views import OrgView, AddUserAskView, OrgHomeView, OrgCourseView, OrgDescView, OrgTeacherView, AddFavView, TeacherListView
+from .views import OrgView, AddUserAskView, OrgHomeView, OrgCourseView, OrgDescView, OrgTeacherView, AddFavView
+from .views import TeacherListView
 
 urlpatterns = [
     url(r'^list/$', OrgView.as_view(), name='org_list'),

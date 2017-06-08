@@ -188,7 +188,7 @@ class AddFavView(View):
 class TeacherListView(View):
     # 授课教师列表页
     def get(self, request):
-        teachers = Teacher.objects.all()
+        all_teachers = Teacher.objects.all()
         return render(request, 'teachers-list.html', {
-            'teachers': teachers,
+            'all_teachers': all_teachers,
         })
