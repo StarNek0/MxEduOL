@@ -5,7 +5,7 @@
 from django.conf.urls import url, include
 
 from .views import OrgView, AddUserAskView, OrgHomeView, OrgCourseView, OrgDescView, OrgTeacherView, AddFavView
-from .views import TeacherListView
+from .views import TeacherListView, TeacherDetailView
 
 urlpatterns = [
     url(r'^list/$', OrgView.as_view(), name='org_list'),
@@ -19,4 +19,5 @@ urlpatterns = [
     url(r'^add_fav/$', AddFavView.as_view(), name='add_fav'),
 
     url(r'^teacher/list/$', TeacherListView.as_view(), name='teacher_list'),
+    url(r'^teacher/list/(?P<teacher_id>\d+)$', TeacherDetailView.as_view(), name='teacher_detail')
 ]

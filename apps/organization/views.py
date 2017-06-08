@@ -216,3 +216,11 @@ class TeacherListView(View):
             'teacher_nums': teacher_nums,
             'sort': sort,
         })
+
+
+class TeacherDetailView(View):
+    def get(self, request, teacher_id):
+        teacher = CourseOrg.objects.get(id=int(teacher_id))
+        return render(request, 'teacher-detail.html', {
+            'teacher': teacher,
+        })
