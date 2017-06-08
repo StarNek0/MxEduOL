@@ -73,6 +73,7 @@
                                     {% for user_course in course.get_learn_users %}
                                         <span class="pic"><img width="40" height="40"
                                                                src="
+
                                                                        {{ MEDIA_URL }}{{ user_course.user.image }}"/></span>
                                     {% endfor %}
                                 </li>
@@ -81,7 +82,8 @@
                                 <div class="btn colectgroupbtn" id="jsLeftBtn">
                                     {% if has_fav_course %}已收藏{% else %}收藏{% endif %}
                                 </div>
-                                <div class="buy btn"><a style="color: white" href="{% url 'course:course_info' course.id %}">开始学习</a></div>
+                                <div class="buy btn"><a style="color: white"
+                                                        href="{% url 'course:course_info' course.id %}">开始学习</a></div>
                             </div>
                         </div>
                         <div class="group-share-box">
@@ -219,18 +221,20 @@
                     <div class="group_recommend">
                         {% for near_type_course in near_type_courses %}
                             {% if not near_type_course.id == course.id %}
-                            <dl>
-                                <dt>
-                                    <a target="_blank" href="{% url 'course:course_detail' near_type_course.id %}">
-                                        <img width="240" height="220" class="scrollLoading"
-                                             src="{{ MEDIA_URL }}{{ near_type_course.Image }}"/>
-                                    </a>
-                                </dt>
-                                <dd>
-                                    <a target="_blank" href="{% url 'course:course_detail' near_type_course.id %}"><h2> {{ near_type_course.name }}</h2></a>
-                                    <span class="fl">学习时长：<i class="key">{{ near_type_course.learn_time }}分钟</i></span>
-                                </dd>
-                            </dl>
+                                <dl>
+                                    <dt>
+                                        <a target="_blank" href="{% url 'course:course_detail' near_type_course.id %}">
+                                            <img width="240" height="220" class="scrollLoading"
+                                                 src="{{ MEDIA_URL }}{{ near_type_course.Image }}"/>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a target="_blank" href="{% url 'course:course_detail' near_type_course.id %}">
+                                            <h2> {{ near_type_course.name }}</h2></a>
+                                        <span class="fl">学习时长：<i
+                                                class="key">{{ near_type_course.learn_time }}分钟</i></span>
+                                    </dd>
+                                </dl>
                             {% endif %}
                         {% endfor %}
 
