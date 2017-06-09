@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 from datetime import datetime
 
-#区域2：第三方区域
+# 区域2：第三方区域
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
