@@ -18,6 +18,11 @@ class CourseListView(View):
         # 右栏的推荐课程
         hot_courses = Course.objects.all().order_by('-click_nums')[:3]
 
+        # 搜索功能
+        search_keywords = request.GET.get('keywords', '')
+        if search_keywords:
+            all_courses = all_courses.filter(Q(name__icontains=search_keywords) | Q(desc__icontains=search_keywords) | Q(detail__icontains=search_keywords))  # i是不区分大小写
+
         # 排序筛选功能
         sort = request.GET.get('order', "")  # HTML中的在URL中声明的变量是提交到这里进行判断的
         if sort:

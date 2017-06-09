@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from django.views.generic import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
+from django.db.models import Q
 from django.http import HttpResponse
 
 from .models import CourseOrg
@@ -22,6 +23,11 @@ class OrgView(View):
         all_orgs = CourseOrg.objects.all()  # 课程机构
         hot_orgs = all_orgs.order_by('-click_num')[:3]
         all_citys = CityDict.objects.all()  # 城市
+
+        # 搜索功能
+        search_keywords = request.GET.get('keywords', '')
+        if search_keywords:
+            all_orgs = all_orgs.filter(Q(name__icontains=search_keywords) | Q(desc__icontains=search_keywords))  # i是不区分大小写
 
         # 城市筛选
         city_id = request.GET.get('city', "")
@@ -189,6 +195,11 @@ class TeacherListView(View):
     # 授课教师列表页
     def get(self, request):
         all_teachers = Teacher.objects.all()
+
+        # 搜索功能
+        search_keywords = request.GET.get('keywords', '')
+        if search_keywords:
+            all_teachers = all_teachers.filter(Q(name__icontains=search_keywords) | Q(work_company__icontains=search_keywords) | Q(work_position__icontains=search_keywords))  # i是不区分大小写
 
         # 课程总数
         teacher_nums = all_teachers.count()
