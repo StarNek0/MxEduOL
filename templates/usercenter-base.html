@@ -27,37 +27,41 @@
                     <div class="fl"><p>服务电话：<b>33333333</b></p></div>
                     <!--登录后跳转-->
 
-
-                    <div class="personal">
-                        <dl class="user fr">
-                            <dd>bobby<img class="down fr" src="../images/top_down.png"/></dd>
-                            <dt><img width="20" height="20" src="../media/image/2016/12/default_big_14.png"/></dt>
-                        </dl>
-                        <div class="userdetail">
-                            <dl>
-                                <dt><img width="80" height="80" src="../media/image/2016/12/default_big_14.png"/></dt>
-                                <dd>
-                                    <h2>django</h2>
-                                    <p>bobby</p>
-                                </dd>
+                    {% if request.user.is_authenticated %}
+                        <div class="personal">
+                            <dl class="user fr">
+                                <dd>{{ request.user.nickname }}<img class="down fr" src="{% static 'images/top_down.png' %}"/></dd>
+                                <dt><img width="20" height="20" src="{{ MEDIA_URL }}{{ request.user.image }}"/></dt>
                             </dl>
-                            <div class="btn">
-                                <a class="personcenter fl" href="usercenter-info.html">进入个人中心</a>
-                                <a class="fr" href="/logout/">退出</a>
+                            <div class="userdetail">
+                                <dl>
+                                    <dt><img width="80" height="80" src="{{ MEDIA_URL }}{{ request.user.image }}"/></dt>
+                                    <dd>
+                                        <h2>{{ request.user.username }}</h2>
+                                        <p>{{ request.user.email }}</p>
+                                    </dd>
+                                </dl>
+                                <div class="btn">
+                                    <a class="personcenter fl" href="{% url 'users:user_info' %}">进入个人中心</a>
+                                    <a class="fr" href="/logout/">退出</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <a href="usercenter-message.html">
-                        <div class="msg-num"><span id="MsgNum">0</span></div>
-                    </a>
-
+                        <a href="usercenter-message.html">
+                            <div class="msg-num"><span id="MsgNum">0</span></div>
+                        </a>
+                    {% else %}
+                            <!--登录后跳转-->
+                            <a style="color:white" class="fr registerbtn" href="{% url 'register' %}">注册</a>
+                            <a style="color:white" class="fr loginbtn" href={% url 'login' %}>登录</a>
+                    {% endif %}
 
                 </div>
             </div>
 
             <div class="middle">
                 <div class="wp">
-                    <a href="index.html"><img class="fl" src="../images/logo2.png"/></a>
+                    <a href="{% url 'index' %}"><img class="fl" src="{% static 'images/logo2.png' %}"/></a>
                     <h1>我的慕学网</h1>
                 </div>
             </div>
@@ -204,7 +208,7 @@
     </div>
     <div class="resetpwdbox dialogbox" id="jsResetDialog">
         <h1>修改密码</h1>
-        <div class="close jsCloseDialog"><img src="../images/dig_close.png"/></div>
+        <div class="close jsCloseDialog"><img src="/static/images/dig_close.png"/></div>
         <div class="cont">
             <form id="jsResetPwdForm" autocomplete="off">
                 <div class="box">
@@ -220,7 +224,7 @@
                     <input id="jsResetPwdBtn" type="button" value="提交"/>
                 </div>
                 <input type='hidden' name='csrfmiddlewaretoken' value='DaP7IUKm9FA9nELA9YUlYYWpyIDdCiIP'/>
-                <input type='hidden' name='csrfmiddlewaretoken' value='799Y6iPeEDNSGvrTu3noBrO4MBLv6enY'/>
+                {% csrf_token %}
             </form>
         </div>
     </div>
@@ -247,9 +251,9 @@
 
     <div class="noactivebox dialogbox" id="jsUnactiveForm">
         <h1>邮件验证提示</h1>
-        <div class="close jsCloseDialog"><img src="../images/dig_close.png"/></div>
+        <div class="close jsCloseDialog"><img src="{% static 'images/dig_close.png' %}"/></div>
         <div class="center">
-            <img src="../images/send.png"/>
+            <img src="{% static 'images/send.png' %}"/>
             <p>我们已经向您的邮箱<span class="green" id="jsEmailToActive">12@13.com</span>发送了邮件，<br/>为保证您的账号安全，请及时验证邮箱</p>
             <p class="a"><a class="btn" id="jsGoToEmail" target="_blank" href="http://mail.qq.com">去邮箱验证</a></p>
             <p class="zy_success upmove"></p>
@@ -260,12 +264,12 @@
     </div>
     <div class="resetpassbox dialogbox" id="jsSetNewPwd">
         <h1>重新设置密码</h1>
-        <div class="close jsCloseDialog"><img src="../images/dig_close.png"/></div>
+        <div class="close jsCloseDialog"><img src="{% static 'images/dig_close.png' %}"/></div>
         <p class="green">请输入新密码</p>
         <form id="jsSetNewPwdForm">
             <div class="box">
                 <span class="word2">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>
-                <input type="password" name="password" id="jsResetPwd" placeholder="请输入新密码"/>
+                <input type="password" name="password1" id="jsResetPwd" placeholder="请输入新密码"/>
             </div>
             <div class="box">
                 <span class="word2">确&nbsp;认&nbsp;密&nbsp;码</span>
@@ -285,7 +289,7 @@
     </div>
     <div class="forgetbox dialogbox">
         <h1>忘记密码</h1>
-        <div class="close jsCloseDialog"><img src="../images/dig_close.png"/></div>
+        <div class="close jsCloseDialog"><img src="{% static 'images/dig_close.png' %}"/></div>
         <div class="cont">
             <form id="jsFindPwdForm" autocomplete="off">
                 <input type='hidden' name='csrfmiddlewaretoken' value='DaP7IUKm9FA9nELA9YUlYYWpyIDdCiIP'/>
