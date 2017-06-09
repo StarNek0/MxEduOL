@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="怎么完成上传信息并修改的功能呢，首先&#10;1.添加urls，设置views的POST,用于在HTML中action提交到这个URL&#10;2.添加forms&#10;3.forms-&gt;views, 并且要从request中取FIELS&#10;4.注意能够直接存取数据的modelform方法">
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/urls.py" afterPath="$PROJECT_DIR$/apps/users/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/views.py" afterPath="$PROJECT_DIR$/apps/users/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/unslider.js" afterPath="$PROJECT_DIR$/static/js/unslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org_base.html" afterPath="$PROJECT_DIR$/templates/org_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/usercenter-base.html" afterPath="$PROJECT_DIR$/templates/usercenter-base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path=".idea/dataSources/8d727994-8761-46cd-b584-5fcd987baea4.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,108 +76,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding>
-                <element signature="e#70#102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="163" column="55" lean-forward="false" selection-start-line="163" selection-start-column="55" selection-end-line="163" selection-end-column="55" />
-              <folding>
-                <element signature="e#14#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-              <folding>
-                <element signature="e#71#95#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usercenter-info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/usercenter-info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usercenter-base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/usercenter-base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="331" selection-end-column="54" />
-              <folding>
-                <element signature="n#if#0;n#!!top" expanded="false" />
-                <element signature="e#13649#13655#0#HTML" expanded="true" />
-                <element signature="e#13655#13661#0#HTML" expanded="true" />
-                <element signature="e#13661#13667#0#HTML" expanded="true" />
-                <element signature="e#13667#13673#0#HTML" expanded="true" />
-                <element signature="e#13673#13679#0#HTML" expanded="true" />
-                <element signature="e#13679#13685#0#HTML" expanded="true" />
-                <element signature="e#13875#13881#0#HTML" expanded="true" />
-                <element signature="e#13882#13888#0#HTML" expanded="true" />
-                <element signature="e#13889#13895#0#HTML" expanded="true" />
-                <element signature="e#14088#14094#0#HTML" expanded="true" />
-                <element signature="e#14094#14100#0#HTML" expanded="true" />
-                <element signature="e#14101#14107#0#HTML" expanded="true" />
-                <element signature="e#14107#14113#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="org_base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/org_base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="134" column="61" lean-forward="false" selection-start-line="134" selection-start-column="61" selection-end-line="134" selection-end-column="61" />
-              <folding>
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="org-list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/org-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="166" column="72" lean-forward="false" selection-start-line="166" selection-start-column="72" selection-end-line="166" selection-end-column="72" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="52">
+                <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -279,7 +181,6 @@
         <option value="$PROJECT_DIR$/templates/org-detail-teachers.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-homepage.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-course.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/apps/organization/urls.py" />
         <option value="$PROJECT_DIR$/templates/course-comment.html" />
         <option value="$PROJECT_DIR$/templates/course-detail.html" />
@@ -306,6 +207,7 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/js/unslider.js" />
         <option value="$PROJECT_DIR$/templates/org_base.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -792,13 +694,6 @@
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
     </task>
-    <task id="LOCAL-00087" summary="从models取出所有数据并传递到HTML页面">
-      <created>1496309980201</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1496309980201</updated>
-    </task>
     <task id="LOCAL-00088" summary="配置跳转路径等，样式修改，title修改">
       <created>1496386291547</created>
       <option name="number" value="00088" />
@@ -1135,7 +1030,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497001867757</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="添加了修改密码的功能Urls和Views。修复了鼠标悬停不显示下拉菜单的问题。">
+      <created>1497013526345</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1497013526345</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1224,7 +1126,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="title修改" />
     <MESSAGE value="课程章节信息&#10;1.导入HTML文件&#10;2.查看哪些部分可以继承模板文件，详情界面是要配置相应的urlID的，先留空&#10;3.发现content部分和css部分是不继承的，添加到block里,删除剩余部分。修改静态css路径为动态的&#10;4.配置url,views,同时修改HTML中的路径。-----------必须注意区分course_id和course.id！！！！！！！！！修改导航栏激活状态&#10;5.增加相应的章节信息和视频信息，扩充models内容，makemigrations，migrate" />
     <MESSAGE value="课程章节信息PLUS&#10;1.课程基本信息动态显示&#10;2.reformate code&#10;3.删除冗余的静态数据,换成动态数据&#10;4.添加视频时间信息Models，views添加资源展示，可以下载，下载地址路径跟图片是一个格式{{ MEDIA_URL }}{{ course_resource.download }}&#10;5.models之间没有任何关联，那么就要在models里添加外键，mm&#10;6.讲师静态数据换成动态数据，添加两个models，mm" />
     <MESSAGE value="课程评论&#10;1.URL页面，配置views，继承base，动态路径，动态内容&#10;2.JS代码内的参数要和Views里面的POST.get数据名称对应&#10;3.成功完成了评论的添加评论和显示" />
@@ -1249,7 +1150,8 @@
     <MESSAGE value="导入个人中心HTML，创建base，为其规定block，替换static文件路径" />
     <MESSAGE value="info页面替换blocks，设计其views和urls，取用户的信息则要用到request.user" />
     <MESSAGE value="怎么完成上传信息并修改的功能呢，首先&#10;1.添加urls，设置views的POST,用于在HTML中action提交到这个URL&#10;2.添加forms&#10;3.forms-&gt;views, 并且要从request中取FIELS&#10;4.注意能够直接存取数据的modelform方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="怎么完成上传信息并修改的功能呢，首先&#10;1.添加urls，设置views的POST,用于在HTML中action提交到这个URL&#10;2.添加forms&#10;3.forms-&gt;views, 并且要从request中取FIELS&#10;4.注意能够直接存取数据的modelform方法" />
+    <MESSAGE value="添加了修改密码的功能Urls和Views。修复了鼠标悬停不显示下拉菜单的问题。" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了修改密码的功能Urls和Views。修复了鼠标悬停不显示下拉菜单的问题。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1278,22 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="390">
-            <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1528,7 +1414,7 @@
         <state relative-caret-position="-3163">
           <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
           <folding>
-            <element signature="e#320#329#0" expanded="true" />
+            <element signature="e#320#329#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1699,14 +1585,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/org_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="134" column="61" lean-forward="false" selection-start-line="134" selection-start-column="61" selection-end-line="134" selection-end-column="61" />
+        <state relative-caret-position="278">
+          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="52">
+            <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
