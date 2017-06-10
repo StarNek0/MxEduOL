@@ -21,7 +21,10 @@ def random_str(randomlength=8):  # 生成随机校验码
 
 def send_register_email(email, send_type='register'):  # 发送验证邮件
     email_record = EmailVerifyRecord()  # 实例化email表
-    code = random_str(16)  # 16位校验码
+    if send_type == "update_email":
+        code = random_str(6)
+    else:
+        code = random_str(16)  # 16位校验码
     email_record.code = code  # 传入数据库
     email_record.email = email
     email_record.send_type = send_type  # 类型为注册
@@ -31,15 +34,22 @@ def send_register_email(email, send_type='register'):  # 发送验证邮件
     email_body = ''
 
     if send_type == 'register':
-        email_title = '慕学在线网注册激活链接'
+        email_title = '极慕客注册激活链接'
         email_body = '请点击下边的链接激活您的账号: http://127.0.0.1:8000/active/{0}'.format(code)
 
         send_status = send_mail(email_title, email_body, settings.EMAIL_FROM, [email])
         if send_status:
             pass
     elif send_type == 'forget':
-        email_title = '慕学在线网账户密码重置链接'
+        email_title = '极慕客账户密码重置链接'
         email_body = '请点击下边的链接重置您的密码: http://127.0.0.1:8000/reset/{0}'.format(code)
+
+        send_status = send_mail(email_title, email_body, settings.EMAIL_FROM, [email])
+        if send_status:
+            pass
+    elif send_type == 'update_email':
+        email_title = '极慕客邮箱修改验证码'
+        email_body = '您的邮箱验证码为: {0}'.format(code)
 
         send_status = send_mail(email_title, email_body, settings.EMAIL_FROM, [email])
         if send_status:

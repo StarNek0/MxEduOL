@@ -2,7 +2,7 @@
 # __author__ = 'zsdostar'
 # __date__ = '2017/6/9 14:55'
 from django.conf.urls import url
-from .views import UserInfoView, UploadImageView, UpdatePwdView
+from .views import UserInfoView, UploadImageView, UpdatePwdView, SendEmailCodeView
 
 urlpatterns = [
     # 用户个人信息
@@ -11,4 +11,6 @@ urlpatterns = [
     url(r'^image/upload/$', UploadImageView.as_view(), name='image_upload'),
     # 修改密码
     url(r'^update/pwd/$', UpdatePwdView.as_view(), name='update_pwd'),
+    # 修改邮箱的发送验证码
+    url(r'^sendemail_code/$', SendEmailCodeView.as_view(), name='sendemail_code'),
 ]
