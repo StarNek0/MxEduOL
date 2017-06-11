@@ -86,8 +86,8 @@
     <div class="wp list personal_list">
         <div class="left">
             <ul>
-                <li class="active2"><a href="usercenter-info.html">个人资料</a></li>
-                <li><a href="usercenter-mycourse.html">我的课程</a></li>
+                <li class="{% if active_code == 'userinfo' %}active2{% endif %}"><a href="{% url 'users:user_info' %}">个人资料</a></li>
+                <li class="{% if active_code == 'mycourse' %}active2{% endif %}"><a href="{% url 'users:mycourse' %}">我的课程</a></li>
                 <li><a href="usercenter-fav-course.html">我的收藏</a></li>
                 <li>
                     <a href="usercenter-message.html" style="position: relative;">

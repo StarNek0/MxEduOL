@@ -9,6 +9,7 @@ from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse
 
 from .models import UserProfile, EmailVerifyRecord
+from operation.models import UserCourse
 from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm, UploadImageForm, UserInfoForm
 from utils.email_send import send_register_email
 from utils.mixin_utils import LoginRequiredMixin
@@ -138,7 +139,10 @@ class ModifyPwdView(View):
 class UserInfoView(LoginRequiredMixin, View):
     # 个人信息
     def get(self, request):
-        return render(request, 'usercenter-info.html', {})
+        active_code = 'userinfo'
+        return render(request, 'usercenter-info.html', {
+            'active_code': active_code,
+        })
 
     def post(self, request):
         user_info_form = UserInfoForm(request.POST, instance=request.user)  # instance很关键，表明了是修改用户的ID，否则会新增用户
@@ -204,3 +208,12 @@ class UpdateEmailView(LoginRequiredMixin, View):
         else:
             return HttpResponse('{"email":"验证码出错"}', content_type='application/json')
 
+
+class MyCourseView(LoginRequiredMixin, View):
+    def get(self, request):
+        active_code = 'mycourse'
+        user_courses = UserCourse.objects.filter(user=request.user)
+        return render(request, 'usercenter-mycourse.html', {
+            'user_courses': user_courses,
+            'active_code': active_code,
+        })
