@@ -1,6 +1,6 @@
 # MxEduOL
 - A basic educational website wrote in Win10x64
-- Until now, the website still in unfinish state, has finished about 71% rate of progress...
+- Until now, the website still in unfinish state, has finished about 75% rate of progress...
 
 The tools I used as follows:
 
