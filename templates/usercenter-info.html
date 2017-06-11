@@ -42,12 +42,12 @@
                 <form class="perinform" id="jsEditUserForm" autocomplete="off">
                     <ul class="right">
                         <li>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：
-                            <input type="text" name="nick_name" id="nick_name" value="{{ request.user.nickname }}"
+                            <input type="text" name="nickname" id="nick_name" value="{{ request.user.nickname }}"
                                    maxlength="10">
                             <i class="error-tips"></i>
                         </li>
                         <li>生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日：
-                            <input type="text" id="birth_day" name="birday" value="{{ request.user.birthday }}"
+                            <input type="text" id="birth_day" name="birthday" value="{{ request.user.birthday }}"
                                    readonly="readonly"/>
                             <i class="error-tips"></i>
                         </li>
@@ -79,6 +79,7 @@
                         </li>
                     </ul>
                     <input type='hidden' name='csrfmiddlewaretoken' value='799Y6iPeEDNSGvrTu3noBrO4MBLv6enY'/>
+                    {% csrf_token %}
                 </form>
             </div>
         </div>

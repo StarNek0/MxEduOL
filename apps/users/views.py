@@ -9,7 +9,7 @@ from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse
 
 from .models import UserProfile, EmailVerifyRecord
-from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm, UploadImageForm
+from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm, UploadImageForm, UserInfoForm
 from utils.email_send import send_register_email
 from utils.mixin_utils import LoginRequiredMixin
 
@@ -132,14 +132,21 @@ class ModifyPwdView(View):
         else:
             email = request.POST.get('email', '')
             return render(request, 'password_reset.html', {'email': email, 'modify_form':modify_form})
+# ----------------------------------------------------------------------------------------------------------------------
 
 
 class UserInfoView(LoginRequiredMixin, View):
     # 个人信息
     def get(self, request):
-        return render(request, 'usercenter-info.html', {
+        return render(request, 'usercenter-info.html', {})
 
-        })
+    def post(self, request):
+        user_info_form = UserInfoForm(request.POST, instance=request.user)  # instance很关键，表明了是修改用户的ID，否则会新增用户
+        if user_info_form.is_valid():
+            user_info_form.save()
+            return HttpResponse('{"status":"success"}', content_type='application/json')
+        else:
+            return HttpResponse(json.dumps(user_info_form.errors), content_type='application/json')
 
 
 class UploadImageView(LoginRequiredMixin, View):
