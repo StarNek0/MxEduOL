@@ -3,6 +3,7 @@
 # __date__ = '2017/6/9 14:55'
 from django.conf.urls import url
 from .views import UserInfoView, UploadImageView, UpdatePwdView, SendEmailCodeView, UpdateEmailView, MyCourseView
+from .views import MyFavOrgView
 
 urlpatterns = [
     # 用户个人信息
@@ -17,4 +18,6 @@ urlpatterns = [
     url(r'^update_email/$', UpdateEmailView.as_view(), name='update_email'),
     # 用户课程
     url(r'^mycourse/$', MyCourseView.as_view(), name="mycourse"),
+    # 收藏机构
+    url(r'^myfav/org/$', MyFavOrgView.as_view(), name="myfav_org"),
 ]

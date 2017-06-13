@@ -9,7 +9,8 @@ from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse
 
 from .models import UserProfile, EmailVerifyRecord
-from operation.models import UserCourse
+from operation.models import UserFavourite, UserCourse
+from organization.models import CourseOrg
 from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm, UploadImageForm, UserInfoForm
 from utils.email_send import send_register_email
 from utils.mixin_utils import LoginRequiredMixin
@@ -215,5 +216,19 @@ class MyCourseView(LoginRequiredMixin, View):
         user_courses = UserCourse.objects.filter(user=request.user)
         return render(request, 'usercenter-mycourse.html', {
             'user_courses': user_courses,
+            'active_code': active_code,
+        })
+
+
+class MyFavOrgView(LoginRequiredMixin, View):
+    def get(self, request):
+        active_code = 'myfavorg'
+        org_lists = []
+        fav_orgs = UserFavourite.objects.filter(user=request.user, fav_type=2)
+        for fav_org in fav_orgs:
+            org = CourseOrg.objects.get(id=fav_org.fav_id)
+            org_lists.append(org)
+        return render(request, 'usercenter-fav-org.html', {
+            'org_lists': org_lists,
             'active_code': active_code,
         })
