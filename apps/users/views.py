@@ -277,7 +277,9 @@ class MyMessageView(LoginRequiredMixin, View):
     def get(self, request):
         active_code = 'mymessage'
         all_messages = UserMessage.objects.filter(user=request.user.id)  # user用的不是外键，所以只好取id
-
+        for all_message in all_messages:
+            all_message.is_read = 1
+            all_message.save()
         try:
             page = request.GET.get('page', 1)
         except PageNotAnInteger:
