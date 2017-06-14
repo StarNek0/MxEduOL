@@ -14,22 +14,23 @@
 
 {% block right_content %}
     <div class="right">
-            <div class="personal_des Releasecont">
-                <div class="head">
-                    <h1>我的课程</h1>
-                </div>
+        <div class="personal_des Releasecont">
+            <div class="head">
+                <h1>我的课程</h1>
             </div>
-            <div class="personal_des permessage">
-                <div class="companycenter">
-                    <div class="group_list brief">
-                        {% for user_course in user_courses %}
+        </div>
+        <div class="personal_des permessage">
+            <div class="companycenter">
+                <div class="group_list brief">
+                    {% for user_course in user_courses %}
                         <div class="module1_5 box">
                             <a href="{% url 'course:course_detail' user_course.course.id %}">
                                 <img width="214" height="190" class="scrollLoading"
                                      src="{{ MEDIA_URL }}{{ user_course.course.Image }}"/>
                             </a>
                             <div class="des">
-                                <a href="{% url 'course:course_detail' user_course.course.id %}"><h2>{{ user_course.course.name }}</h2></a>
+                                <a href="{% url 'course:course_detail' user_course.course.id %}">
+                                    <h2>{{ user_course.course.name }}</h2></a>
                                 <span class="fl">课时：<i class="key">{{ user_course.course.learn_time }}</i></span>
                                 <span class="fr">学习人数：{{ user_course.course.students }}</span>
                             </div>
@@ -38,11 +39,11 @@
                                 <span class="star fr  notlogin" data-favid="15">0</span>
                             </div>
                         </div>
-                        {% endfor %}
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
+    </div>
 {% endblock %}
 
 <script src="../static/js/selectUi.js" type='text/javascript'></script>

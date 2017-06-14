@@ -41,13 +41,15 @@
                                      src="{{ MEDIA_URL }}{{ course_list.Image }}"/>
                             </a>
                             <div class="des">
-                                <a href="{% url 'course:course_detail' course_list.id %}"><h2>{{ course_list.name }}</h2></a>
+                                <a href="{% url 'course:course_detail' course_list.id %}">
+                                    <h2>{{ course_list.name }}</h2></a>
                                 <span class="fl">时长：<i class="key">{{ course_list.learn_time }}</i></span>
                                 <span class="fr">学习人数：{{ course_list.students }}</span>
                             </div>
                             <div class="bottom">
                                 <span class="fl">{{ course_list.course_org }}</span>
-                                <span class="delete-group fr jsDeleteFav_course" data-favid="{{ course_list.id }}"></span>
+                                <span class="delete-group fr jsDeleteFav_course"
+                                      data-favid="{{ course_list.id }}"></span>
                             </div>
                         </div>
                     {% endfor %}
