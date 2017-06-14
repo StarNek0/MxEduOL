@@ -7,7 +7,7 @@
             <ul class="crumbs">
                 <li><a href="{% url 'index' %}">首页</a>></li>
                 <li><a href="/user/home/">个人中心</a>></li>
-                <li>个人信息</li>
+                <li>我的收藏</li>
             </ul>
         </div>
     </section>
@@ -15,23 +15,26 @@
 
 {% block right_content %}
     <div class="right">
-            <div class="personal_des Releasecont">
-                <div class="head">
-                    <h1>我的收藏</h1>
-                </div>
-
+        <div class="personal_des Releasecont">
+            <div class="head">
+                <h1>我的收藏</h1>
             </div>
-            <div class="personal_des permessage">
-                <div class="head">
-                    <ul class="tab_header messagehead">
-                        <li class="active"><a href="{% url 'users:myfav_org' %}">课程机构</a></li>
-                        <li><a href="usercenter-fav-teacher.html">授课教师 </a></li>
-                        <li><a href="usercenter-fav-course.html">公开课程</a></li>
-                    </ul>
-                </div>
-                <div class="messagelist">
-                    {% for org_list in org_lists %}
-                        <div class="messages butler_list company company-fav-box">
+
+        </div>
+        <div class="personal_des permessage">
+            <div class="head">
+                <ul class="tab_header messagehead">
+                    <li {% if active_code == 'myfavorg' %}class="active"{% endif %}><a
+                            href="{% url 'users:myfav_org' %}">课程机构</a></li>
+                    <li {% if active_code == 'myfavteacher' %}class="active"{% endif %}><a
+                            href="{% url 'users:myfav_teacher' %}">授课教师 </a></li>
+                    <li {% if active_code == 'myfavcourse' %}class="active"{% endif %}><a
+                            href="{% url 'users:myfav_course' %}">公开课程</a></li>
+                </ul>
+            </div>
+            <div class="messagelist">
+                {% for org_list in org_lists %}
+                    <div class="messages butler_list company company-fav-box">
                         <dl class="des fr">
                             <dt>
                                 <a href="{% url 'org:org_home' org_list.id %}">
@@ -49,14 +52,14 @@
 
                                 </div>
                                 <span class="c8 clear">{{ org_list.address }}</span>
-                                <div class="delete jsDeleteFav_org" data-favid="1"></div>
+                                <div class="delete jsDeleteFav_org" data-favid="{{ org_list.id }}"></div>
                             </dd>
                         </dl>
                     </div>
-                    {% endfor %}
+                {% endfor %}
 
 
-                </div>
             </div>
         </div>
+    </div>
 {% endblock %}

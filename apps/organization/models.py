@@ -61,6 +61,8 @@ class Teacher(models.Model):
     def get_teacher_course(self):
         return self.course_set.all()
 
+    def get_teacher_course_count(self):
+        return self.course_set.all().count()
     class Meta:
         verbose_name = '教师基本信息'
         verbose_name_plural = verbose_name

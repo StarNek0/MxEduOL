@@ -1,5 +1,6 @@
 # coding:utf8
 import json
+#
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.backends import ModelBackend  # 自定义逻辑
@@ -7,13 +8,16 @@ from django.db.models import Q  # 并集查询
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse
-
+#
 from .models import UserProfile, EmailVerifyRecord
 from operation.models import UserFavourite, UserCourse
-from organization.models import CourseOrg
+from organization.models import CourseOrg, Teacher
+from courses.models import Course
+
 from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm, UploadImageForm, UserInfoForm
 from utils.email_send import send_register_email
 from utils.mixin_utils import LoginRequiredMixin
+#
 
 
 class CustomBackend(ModelBackend):
@@ -231,4 +235,32 @@ class MyFavOrgView(LoginRequiredMixin, View):
         return render(request, 'usercenter-fav-org.html', {
             'org_lists': org_lists,
             'active_code': active_code,
+        })
+
+
+class MyFavTeacherView(LoginRequiredMixin, View):
+    def get(self, request):
+        active_code = 'myfavteacher'
+        teacher_lists = []
+        fav_teachers = UserFavourite.objects.filter(user=request.user, fav_type=3)
+        for fav_teacher in fav_teachers:
+            teacher = Teacher.objects.get(id=fav_teacher.fav_id)
+            teacher_lists.append(teacher)
+        return render(request, 'usercenter-fav-teacher.html', {
+            'active_code': active_code,
+            'teacher_lists': teacher_lists,
+        })
+
+
+class MyFavCourseView(LoginRequiredMixin, View):
+    def get(self, request):
+        active_code = 'myfavcourse'
+        course_lists = []
+        fav_courses = UserFavourite.objects.filter(user=request.user, fav_type=1)
+        for fav_course in fav_courses:
+            course = Course.objects.get(id=fav_course.fav_id)
+            course_lists.append(course)
+        return render(request, 'usercenter-fav-course.html', {
+            'active_code': active_code,
+            'course_lists': course_lists,
         })
