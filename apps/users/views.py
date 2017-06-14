@@ -8,9 +8,10 @@ from django.db.models import Q  # 并集查询
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse
+from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 #
 from .models import UserProfile, EmailVerifyRecord
-from operation.models import UserFavourite, UserCourse
+from operation.models import UserFavourite, UserCourse, UserMessage
 from organization.models import CourseOrg, Teacher
 from courses.models import Course
 
@@ -72,6 +73,12 @@ class RegisterView(View):
             user_profile.is_active = False
             user_profile.password = make_password(pass_word)  # 密码加密后再存储
             user_profile.save()
+
+            # 写入欢迎注册消息
+            user_message = UserMessage()
+            user_message.user = user_profile.id
+            user_message.message = '欢迎注册极慕客'
+            user_message.save()
 
             send_register_email(user_name, 'register')
             return render(request, 'login.html')
@@ -263,4 +270,22 @@ class MyFavCourseView(LoginRequiredMixin, View):
         return render(request, 'usercenter-fav-course.html', {
             'active_code': active_code,
             'course_lists': course_lists,
+        })
+
+
+class MyMessageView(LoginRequiredMixin, View):
+    def get(self, request):
+        active_code = 'mymessage'
+        all_messages = UserMessage.objects.filter(user=request.user.id)  # user用的不是外键，所以只好取id
+
+        try:
+            page = request.GET.get('page', 1)
+        except PageNotAnInteger:
+            page = 1
+        p = Paginator(all_messages, 5, request=request)
+        messages = p.page(page)
+
+        return render(request, 'usercenter-message.html', {
+            'messages': messages,
+            'active_code': active_code,
         })
