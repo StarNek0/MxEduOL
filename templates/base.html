@@ -45,6 +45,9 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="{% url 'users:mymessage' %}">
+                            <div class="msg-num"><span id="MsgNum">{{ request.user.get_unread_counts }}</span></div>
+                        </a>
                     {% else %}
                         <!--登录后跳转-->
                         <a style="color:white" class="fr registerbtn" href="{% url 'register' %}">注册</a>
