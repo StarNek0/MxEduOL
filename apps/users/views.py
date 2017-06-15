@@ -153,6 +153,7 @@ class ModifyPwdView(View):
             email = request.POST.get('email', '')
             return render(request, 'password_reset.html', {'email': email, 'modify_form':modify_form})
 # ----------------------------------------------------------------------------------------------------------------------
+# 个人中心页面
 
 
 class UserInfoView(LoginRequiredMixin, View):
@@ -312,3 +313,12 @@ class IndexView(View):
             'banner_courses': banner_courses,
             'orgs': orgs,
         })
+# ----------------------------------------------------------------------------------------------------------------------
+# 错误页面显示的配置
+
+
+def page_not_found(request):
+    from django.shortcuts import render_to_response
+    response = render_to_response('404.html', {})
+    response.status_code = 404
+    return response

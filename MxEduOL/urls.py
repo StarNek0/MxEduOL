@@ -23,7 +23,7 @@ from django.views.generic import TemplateView
 from django.views.static import serve
 
 # from users.views import user_login
-from MxEduOL.settings import MEDIA_ROOT
+from MxEduOL.settings import MEDIA_ROOT, STATIC_ROOT
 from users.views import LoginView, LogoutView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView
 from users.views import IndexView
 from organization.views import OrgView
@@ -47,6 +47,10 @@ urlpatterns = [
     url(r'^course/', include('courses.urls', namespace='course')),
     # 配置上传文件的访问处理函数
     url(r'^media/(?P<path>.*)', serve, {'document_root': MEDIA_ROOT}),
+    # 配置静态文件处理函数
+    url(r'^media/(?P<path>.*)', serve, {'document_root': STATIC_ROOT}),
     # 用户分支url
     url(r'^users/', include('users.urls', namespace='users')),
 ]
+
+handler404 = 'users.views.page_not_found'
