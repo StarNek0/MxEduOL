@@ -25,12 +25,14 @@ from django.views.static import serve
 # from users.views import user_login
 from MxEduOL.settings import MEDIA_ROOT
 from users.views import LoginView, LogoutView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView
+from users.views import IndexView
 from organization.views import OrgView
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^xadmin/', xadmin.site.urls),
-    url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
+    # url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
+    url(r'^$', IndexView.as_view(), name='index'),
     url(r'^login/$', LoginView.as_view(), name='login'),
     url(r'^logout/$', LogoutView.as_view(), name='logout'),
     url(r'^register/$', RegisterView.as_view(), name='register'),

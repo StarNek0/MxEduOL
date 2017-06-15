@@ -298,3 +298,10 @@ class MyMessageView(LoginRequiredMixin, View):
             'messages': messages,
             'active_code': active_code,
         })
+
+
+class IndexView(View):
+    def get(self, request):
+        return render(request, 'index.html', {
+
+        })
