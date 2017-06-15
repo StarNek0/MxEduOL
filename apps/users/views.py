@@ -10,7 +10,7 @@ from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse, HttpResponseRedirect
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 #
-from .models import UserProfile, EmailVerifyRecord
+from .models import UserProfile, EmailVerifyRecord, Banner
 from operation.models import UserFavourite, UserCourse, UserMessage
 from organization.models import CourseOrg, Teacher
 from courses.models import Course
@@ -302,6 +302,13 @@ class MyMessageView(LoginRequiredMixin, View):
 
 class IndexView(View):
     def get(self, request):
+        all_banners = Banner.objects.all().order_by('index')
+        courses = Course.objects.filter(is_banner=False)[:6]
+        banner_courses = Course.objects.filter(is_banner=True)[:3]
+        orgs = CourseOrg.objects.filter()[:15]
         return render(request, 'index.html', {
-
+            'all_banners': all_banners,
+            'courses': courses,
+            'banner_courses': banner_courses,
+            'orgs': orgs,
         })
