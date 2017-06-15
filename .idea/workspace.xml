@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/403.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/500.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path=".idea/dataSources/8d727994-8761-46cd-b584-5fcd987baea4.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,15 +100,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="52">
-                <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+              <first_editor relative-caret-position="208">
+                <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="500.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/500.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -356,16 +368,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoProject\MxEduOL\templates" />
+      <recent name="E:\djangoProject\MxEduOL\static" />
+      <recent name="E:\djangoProject\MxEduOL\apps\utils" />
+      <recent name="E:\djangoProject\MxEduOL\static\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\djangoProject\MxEduOL\apps\organization" />
       <recent name="E:\djangoProject\MxEduOL\apps\operation" />
       <recent name="E:\djangoProject\MxEduOL\apps" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\djangoProject\MxEduOL\static" />
-      <recent name="E:\djangoProject\MxEduOL\templates" />
-      <recent name="E:\djangoProject\MxEduOL\apps\utils" />
-      <recent name="E:\djangoProject\MxEduOL\static\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -701,13 +713,6 @@
       <workItem from="1493167092977" duration="9000" />
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
-    </task>
-    <task id="LOCAL-00112" summary="课程章节信息&#10;1.导入HTML文件&#10;2.查看哪些部分可以继承模板文件，详情界面是要配置相应的urlID的，先留空&#10;3.发现content部分和css部分是不继承的，添加到block里,删除剩余部分。修改静态css路径为动态的&#10;4.配置url,views,同时修改HTML中的路径。-----------必须注意区分course_id和course.id！！！！！！！！！修改导航栏激活状态&#10;5.增加相应的章节信息和视频信息，扩充models内容，makemigrations，migrate">
-      <created>1496815639918</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1496815639919</updated>
     </task>
     <task id="LOCAL-00113" summary="课程章节信息PLUS&#10;1.课程基本信息动态显示&#10;2.reformate code&#10;3.删除冗余的静态数据,换成动态数据&#10;4.添加视频时间信息Models，views添加资源展示，可以下载，下载地址路径跟图片是一个格式{{ MEDIA_URL }}{{ course_resource.download }}&#10;5.models之间没有任何关联，那么就要在models里添加外键，mm&#10;6.讲师静态数据换成动态数据，添加两个models，mm">
       <created>1496821207149</created>
@@ -1045,7 +1050,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497539617043</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="update readme.md">
+      <created>1497540186382</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1497540186383</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1143,7 +1155,6 @@
     <MESSAGE value="JS。。毁我时间。。要注意js中的id和data要和HTML中的id和name相对应。。可以完成信息的修改了" />
     <MESSAGE value="1.bobby的html给的手机等最大长度简直...   2.birthday显示格式有问题，导致了无法正确把数据传入数据库,附加上格式化 xxxxxx|date:&quot;Y-m-d&quot;，则正常" />
     <MESSAGE value="独立完成了个人中心我的课程页面" />
-    <MESSAGE value="update readme.md" />
     <MESSAGE value="css失效啦，登录注册的账户密码框的诡异的bug" />
     <MESSAGE value="收藏机构页面， 记住这里的存数据行的方法&#10;slice:后面的数字需要是字符类型，用于截取字符串" />
     <MESSAGE value="完成所有收藏功能&#10;get 有且仅有一条记录可以找到，否则都会抛出异常。&#10;filter的范围更宽泛一些，可以返回任意多个。" />
@@ -1160,7 +1171,8 @@
     <MESSAGE value="首页数据显示，这里的内置整除方法" />
     <MESSAGE value="路径替换" />
     <MESSAGE value="使用HttpResponseRedirect(reverse(''))方法，进行跳转重定向，解决了登录后并没有真正的跳转到首页，以及render没传过去任何数据，以及跳过去不能刷新的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用HttpResponseRedirect(reverse(''))方法，进行跳转重定向，解决了登录后并没有真正的跳转到首页，以及render没传过去任何数据，以及跳过去不能刷新的问题" />
+    <MESSAGE value="update readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,11 +1198,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/image/2017/04/54584f8f00019fc002200220.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/mask.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1589,8 +1596,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="52">
-            <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+          <first_editor relative-caret-position="208">
+            <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1599,6 +1606,14 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
