@@ -8,6 +8,7 @@ from django.db.models import Q  # 并集查询
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse, HttpResponseRedirect
+from django.core.urlresolvers import reverse
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 #
 from .models import UserProfile, EmailVerifyRecord, Banner
@@ -34,7 +35,6 @@ class CustomBackend(ModelBackend):
 class LogoutView(View):
     def get(self, request):
         logout(request)
-        from django.core.urlresolvers import reverse
         return HttpResponseRedirect(reverse('index'))
 
 
@@ -52,7 +52,7 @@ class LoginView(View):  # 实际上就是变了一种代码的组织形式，和
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request, 'index.html')
+                    return HttpResponseRedirect(reverse('index'))
                 else:
                     return render(request, 'login.html', {'msg': '用户未激活'})
             else:

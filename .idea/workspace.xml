@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/views.py" afterPath="$PROJECT_DIR$/apps/users/views.py" />
     </list>
     <ignored path=".idea/dataSources/8d727994-8761-46cd-b584-5fcd987baea4.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,12 +76,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
+            <state relative-caret-position="223">
               <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding>
+                <element signature="e#14#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,18 +125,6 @@
               <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding>
                 <element signature="e#711#724#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="306" column="8" lean-forward="false" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="8" />
-              <folding>
-                <element signature="e#14#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -280,10 +279,10 @@
         <option value="$PROJECT_DIR$/templates/usercenter-fav-teacher.html" />
         <option value="$PROJECT_DIR$/MxEduOL/urls.py" />
         <option value="$PROJECT_DIR$/apps/courses/models.py" />
-        <option value="$PROJECT_DIR$/apps/users/views.py" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/apps/users/views.py" />
       </list>
     </option>
   </component>
@@ -752,13 +751,6 @@
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
     </task>
-    <task id="LOCAL-00110" summary="reformat all the template HTML code">
-      <created>1496708351239</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1496708351240</updated>
-    </task>
     <task id="LOCAL-00111" summary="title修改">
       <created>1496709056488</created>
       <option name="number" value="00111" />
@@ -1095,7 +1087,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497539142018</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="路径替换">
+      <created>1497539338107</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1497539338141</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1185,7 +1184,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成了全局搜索功能，当然js逻辑是Bobby老师的" />
     <MESSAGE value="导入个人中心HTML，创建base，为其规定block，替换static文件路径" />
     <MESSAGE value="info页面替换blocks，设计其views和urls，取用户的信息则要用到request.user" />
     <MESSAGE value="怎么完成上传信息并修改的功能呢，首先&#10;1.添加urls，设置views的POST,用于在HTML中action提交到这个URL&#10;2.添加forms&#10;3.forms-&gt;views, 并且要从request中取FIELS&#10;4.注意能够直接存取数据的modelform方法" />
@@ -1210,7 +1208,8 @@
     <MESSAGE value="首页换成动态可修改的views，强制刷新是Ctrl + F5" />
     <MESSAGE value="首页数据从数据库取出来" />
     <MESSAGE value="首页数据显示，这里的内置整除方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页数据显示，这里的内置整除方法" />
+    <MESSAGE value="路径替换" />
+    <option name="LAST_COMMIT_MESSAGE" value="路径替换" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1601,16 +1600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="306" column="8" lean-forward="false" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="8" />
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1645,9 +1634,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="223">
           <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
