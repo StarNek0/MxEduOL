@@ -2,12 +2,12 @@
 import json
 #
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.backends import ModelBackend  # 自定义逻辑
 from django.db.models import Q  # 并集查询
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 #
 from .models import UserProfile, EmailVerifyRecord
@@ -29,6 +29,13 @@ class CustomBackend(ModelBackend):
                 return user
         except Exception as e:
             return None
+
+
+class LogoutView(View):
+    def get(self, request):
+        logout(request)
+        from django.core.urlresolvers import reverse
+        return HttpResponseRedirect(reverse('index'))
 
 
 class LoginView(View):  # 实际上就是变了一种代码的组织形式，和下面的user_login是一样的
