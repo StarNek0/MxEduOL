@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))  # 用于解决命令行中�
 SECRET_KEY = '(kq7!)!vphr--tobdbvn9%$0922cr555(#=r3*m7yin7c+nhb1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']  # 允许连接的ip地址
 
@@ -155,4 +155,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 这里只能有一个路径是因为，这是存储路径，而非读取路径
 
 # 这样才能用于生产环境
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
