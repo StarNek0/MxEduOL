@@ -1,6 +1,7 @@
 # MxEduOL
 - A basic educational website wrote in Win10x64
 - Until now, the website still in unfinish state, has finished about 87% rate of progress...
+- And the website is nearly finished, just need to deploy on the server(nginx + uwsgi)
 
 The tools I used as follows:
 
