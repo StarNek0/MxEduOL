@@ -137,8 +137,7 @@ USE_TZ = False  # True  否则就不是本地时间而是UTC时间了
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-# 资源文件路径
-
+# 下面这个是不能直接用于生产环境的呦
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),  # 注意这里要加逗号！
@@ -155,4 +154,5 @@ EMAIL_FROM = 'mxeduol@163.com'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 这里只能有一个路径是因为，这是存储路径，而非读取路径
 
+# 这样才能用于生产环境
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

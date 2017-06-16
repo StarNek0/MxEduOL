@@ -299,6 +299,8 @@ class MyMessageView(LoginRequiredMixin, View):
             'messages': messages,
             'active_code': active_code,
         })
+# ----------------------------------------------------------------------------------------------------------------------
+# 首页
 
 
 class IndexView(View):
@@ -321,4 +323,18 @@ def page_not_found(request):
     from django.shortcuts import render_to_response
     response = render_to_response('404.html', {})
     response.status_code = 404
+    return response
+
+
+def page_error(request):
+    from django.shortcuts import render_to_response
+    response = render_to_response('500.html', {})
+    response.status_code = 500
+    return response
+
+
+def page_forbidden(request):
+    from django.shortcuts import render_to_response
+    response = render_to_response('403.html', {})
+    response.status_code = 403
     return response

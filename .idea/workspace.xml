@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="配置404页面的显示，！！当debug=False时，setting中的静态路径配置会失效的，因为这些静态文件是由apache等服务器代理的 - 解决方法，自行配置其访问url，跟media一样">
+    <list default="true" id="55c5137c-93de-48ff-9001-8dcc3bb23d49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/settings.py" afterPath="$PROJECT_DIR$/MxEduOL/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxEduOL/urls.py" afterPath="$PROJECT_DIR$/MxEduOL/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/views.py" afterPath="$PROJECT_DIR$/apps/users/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/403.html" afterPath="$PROJECT_DIR$/templates/403.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/404.html" afterPath="$PROJECT_DIR$/templates/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/500.html" afterPath="$PROJECT_DIR$/templates/500.html" />
     </list>
     <ignored path=".idea/dataSources/8d727994-8761-46cd-b584-5fcd987baea4.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,12 +80,12 @@
     <favorites_list name="MxEduOL" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="373">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="e#711#724#0" expanded="true" />
               </folding>
@@ -93,8 +96,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="157" column="44" lean-forward="false" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="44" />
+            <state relative-caret-position="451">
+              <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,8 +106,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="323" column="19" lean-forward="true" selection-start-line="323" selection-start-column="19" selection-end-line="323" selection-end-column="19" />
+            <state relative-caret-position="113">
+              <caret line="307" column="25" lean-forward="true" selection-start-line="307" selection-start-column="25" selection-end-line="307" selection-end-column="25" />
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
               </folding>
@@ -115,8 +118,18 @@
       <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="494">
+              <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="500.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/500.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -147,7 +160,6 @@
       <find>jsChangeEmailForm</find>
       <find>EditUserF</find>
       <find>user_info</find>
-      <find>../</find>
       <find>birday</find>
       <find>tab_cont</find>
       <find>media</find>
@@ -167,6 +179,7 @@
       <find>Add</find>
       <find>/static/</find>
       <find>{% static '' %}</find>
+      <find>../</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/images</replace>
@@ -194,9 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/shiyanlou.py" />
-        <option value="$PROJECT_DIR$/templates/active_fail.html" />
-        <option value="$PROJECT_DIR$/templates/forgetpwd.html" />
         <option value="$PROJECT_DIR$/templates/password_reset.html" />
         <option value="$PROJECT_DIR$/templates/send_success.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-desc.html" />
@@ -242,9 +252,12 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/apps/users/views.py" />
+        <option value="$PROJECT_DIR$/templates/403.html" />
         <option value="$PROJECT_DIR$/MxEduOL/settings.py" />
+        <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/MxEduOL/urls.py" />
+        <option value="$PROJECT_DIR$/apps/users/views.py" />
+        <option value="$PROJECT_DIR$/templates/500.html" />
       </list>
     </option>
   </component>
@@ -278,8 +291,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -354,10 +365,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../w0x9py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../c0ks5j" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -713,13 +726,6 @@
       <workItem from="1496224662245" duration="22000" />
       <workItem from="1496225799066" duration="146000" />
     </task>
-    <task id="LOCAL-00114" summary="课程评论&#10;1.URL页面，配置views，继承base，动态路径，动态内容&#10;2.JS代码内的参数要和Views里面的POST.get数据名称对应&#10;3.成功完成了评论的添加评论和显示">
-      <created>1496833777245</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1496833777246</updated>
-    </task>
     <task id="LOCAL-00115" summary="1.学过这门课的人还学过----可真费劲啊&#10;2.老师的评论有BUG，他的各个课的评论互通了，已修复&#10;3.老师的相似课程有BUG，他的相似课程推荐包括这个课本身，已修复（并集查询的每一个集合都要加Q() &amp; Q()）">
       <created>1496838592156</created>
       <option name="number" value="00115" />
@@ -1056,7 +1062,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497540351076</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="配置404页面的显示，！！当debug=False时，setting中的静态路径配置会失效的，因为这些静态文件是由apache等服务器代理的 - 解决方法，自行配置其访问url，跟media一样">
+      <created>1497541280336</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1497541280336</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1080,16 +1093,15 @@
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26918977" sideWeight="0.49509117" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3286334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24728851" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27548808" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3286334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@MxEduOL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30585682" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26652452" sideWeight="0.49509117" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27548808" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14926931" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3286334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.153125" sideWeight="0.50490886" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30151844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1098,6 +1110,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@MxEduOL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30585682" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1146,7 +1159,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="怎么完成上传信息并修改的功能呢，首先&#10;1.添加urls，设置views的POST,用于在HTML中action提交到这个URL&#10;2.添加forms&#10;3.forms-&gt;views, 并且要从request中取FIELS&#10;4.注意能够直接存取数据的modelform方法" />
     <MESSAGE value="添加了修改密码的功能Urls和Views。修复了鼠标悬停不显示下拉菜单的问题。" />
     <MESSAGE value="邮箱验证码发送函数，email_record.save完就不往下进行了，原因竟然是...&#10;是TM的Models的send_type的设计最大长度不够，特喵的绝不要吝啬数据库每一列的最大长度！&#10;以后debug一定要从Models的每个字段-&gt;Views-&gt;Urls-&gt;检查到HTML" />
     <MESSAGE value="完成邮箱修改提交的最后一步，，，出错一直验证中的原因竟然是。。。&#10;是因为少了个小数点。。" />
@@ -1171,7 +1183,8 @@
     <MESSAGE value="使用HttpResponseRedirect(reverse(''))方法，进行跳转重定向，解决了登录后并没有真正的跳转到首页，以及render没传过去任何数据，以及跳过去不能刷新的问题" />
     <MESSAGE value="update readme.md" />
     <MESSAGE value="导入403,404,500的HTML页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="导入403,404,500的HTML页面" />
+    <MESSAGE value="配置404页面的显示，！！当debug=False时，setting中的静态路径配置会失效的，因为这些静态文件是由apache等服务器代理的 - 解决方法，自行配置其访问url，跟media一样" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置404页面的显示，！！当debug=False时，setting中的静态路径配置会失效的，因为这些静态文件是由apache等服务器代理的 - 解决方法，自行配置其访问url，跟media一样" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1197,14 +1210,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/testvir/Lib/site-packages/django/views/static.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1217,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="173" column="70" lean-forward="true" selection-start-line="173" selection-start-column="70" selection-end-line="173" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,7 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="242" column="18" lean-forward="true" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,7 +1285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,10 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="0" column="39918" lean-forward="true" selection-start-line="0" selection-start-column="39918" selection-end-line="0" selection-end-column="39918" />
-          <folding>
-            <element signature="e#402#5395#1" expanded="false" />
-            <element signature="e#5411#13113#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,7 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1317,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="6438" column="14" lean-forward="true" selection-start-line="6438" selection-start-column="14" selection-end-line="6438" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="112" column="24" lean-forward="false" selection-start-line="112" selection-start-column="24" selection-end-line="133" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1357,7 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1525">
           <caret line="79" column="45" lean-forward="false" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,7 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-546">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1381,7 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,7 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3744">
           <caret line="144" column="58" lean-forward="false" selection-start-line="144" selection-start-column="58" selection-end-line="144" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1415,7 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1431,7 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1439,9 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-182">
           <caret line="79" column="72" lean-forward="false" selection-start-line="79" selection-start-column="72" selection-end-line="79" selection-end-column="72" />
-          <folding>
-            <element signature="n#block#4;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,7 +1435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,7 +1442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1465,7 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,7 +1456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,7 +1463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1489,7 +1470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1531,7 +1511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="844" column="4" lean-forward="false" selection-start-line="844" selection-start-column="4" selection-end-line="844" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1547,31 +1526,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/500.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="208">
             <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1579,14 +1548,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="e#711#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="323" column="19" lean-forward="true" selection-start-line="323" selection-start-column="19" selection-end-line="323" selection-end-column="19" />
+        <state relative-caret-position="113">
+          <caret line="307" column="25" lean-forward="true" selection-start-line="307" selection-start-column="25" selection-end-line="307" selection-end-column="25" />
           <folding>
             <element signature="e#14#25#0" expanded="true" />
           </folding>
@@ -1595,27 +1589,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="494">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxEduOL/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/500.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="157" column="44" lean-forward="false" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="44" />
+        <state relative-caret-position="234">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MxEduOL/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="e#711#724#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
