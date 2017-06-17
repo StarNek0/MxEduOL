@@ -15,8 +15,8 @@ class BaseSetting(object):
 
 
 class GlobalSettings(object):
-    site_title = '慕学后台'  # title
-    site_footer = '慕学在线网'  # 底部
+    site_title = '极慕客后台'  # title
+    site_footer = '极慕客'  # 底部
     menu_style = 'accordion'  # 折叠用户表
 
 
@@ -24,12 +24,14 @@ class EmailVerifyRecordAdmin(object):
     list_display = ['code', 'email', 'send_type', 'send_time']  # 添加这行来修改默认显示列
     search_fields = ['code', 'email', 'send_type']  # 这一行是添加搜索框的
     list_filter = ['code', 'email', 'send_type', 'send_time']  # 超棒的功能，过滤器
+    model_icon = 'fa fa-address-book-o'
 
 
 class BannerAdmin(object):
     list_display = ['title', 'image', 'url', 'index', 'add_time']
     search_fields = ['title', 'image', 'url', 'index']
     list_filter = ['title', 'image', 'url', 'index', 'add_time']
+    model_icon = 'fa fa-picture-o'
 
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 xadmin.site.register(Banner, BannerAdmin)

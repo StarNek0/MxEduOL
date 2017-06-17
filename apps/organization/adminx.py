@@ -16,6 +16,7 @@ class CourseOrgAdmin(object):
     list_display = ['name', 'desc', 'click_num', 'fav_nums', 'image', 'address', 'city', 'add_time']
     search_fields = ['name', 'desc', 'click_num', 'fav_nums', 'image', 'address', 'city']
     list_filter = ['name', 'desc', 'click_num', 'fav_nums', 'image', 'address', 'city__name', 'add_time']
+    relfield_style = 'fk-ajax'  # 这样可以用搜索的形式展示而非下拉菜单
 
 
 class TeacherAdmin(object):

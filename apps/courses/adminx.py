@@ -11,6 +11,9 @@ class CourseAdmin(object):
     list_display = ['name', 'desc', 'detail', 'degree', 'learn_time', 'students', 'fav_nums', 'Image', 'click_nums', 'add_time']
     search_fields = ['name', 'desc', 'detail', 'degree', 'students', 'fav_nums', 'Image', 'click_nums']
     list_filter = ['name', 'desc', 'detail', 'degree', 'learn_time', 'students', 'fav_nums', 'Image', 'click_nums', 'add_time']
+    # ordering = ['']  # 默认排序
+    # readonly_fields = ['']  # 有些字段可能是不应该让更改的
+    # exclude = ['']  # 可以默认不显示某些字段
 
 
 class LessonAdmin(object):
