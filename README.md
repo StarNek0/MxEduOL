@@ -14,3 +14,8 @@ Navicat|11.0.10
 Then is the packages for Environmental dependence Version:
 
 <img src="https://github.com/zsdostar/MxEduOL/raw/master/image/PackagesVersion.png" />
+
+extra:
+
+django-pure-pagination
+django-simple-captcha
