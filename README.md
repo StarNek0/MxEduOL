@@ -19,5 +19,7 @@ Then is the packages for Environmental dependence Version:
 extra:
 
 django-pure-pagination
+
 django-simple-captcha
+
 20171116 - CentOS7下部署的时候发现刷不出来验证码，后把Pillow从4.3.0降级到4.2.1，遂正常
