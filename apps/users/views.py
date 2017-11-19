@@ -79,15 +79,18 @@ class RegisterView(View):
             user_profile.email = user_name
             user_profile.is_active = False
             user_profile.password = make_password(pass_word)  # 密码加密后再存储
-            user_profile.save()
+
 
             # 写入欢迎注册消息
             user_message = UserMessage()
             user_message.user = user_profile.id
             user_message.message = '欢迎注册极慕客'
-            user_message.save()
 
             send_register_email(user_name, 'register')
+
+            user_profile.save()
+            user_message.save()
+
             return render(request, 'login.html')
         else:
             return render(request, 'register.html', {'register_form': register_form})
