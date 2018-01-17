@@ -98,14 +98,14 @@
                 {% for teacher in teacher_rank %}
                     <dl class="des">
                         <span class="num fl">{{ forloop.counter }}</span>
-                        <a href="/diary/hk_detail/6/">
+                        <a href="{% url 'org:teacher_detail' teacher.id %}">
                             <dt>
                                 <img width="50" height="50" class="scrollLoading"
                                      src="{{ MEDIA_URL }}{{ teacher.image }}"/>
                             </dt>
                         </a>
                         <dd>
-                            <a href="/diary/hk_detail/6/">
+                            <a href="{% url 'org:teacher_detail' teacher.id %}">
                                 <h1 title="{{ teacher.name }}">{{ teacher.name }}</h1>
                             </a>
                             <p>经验：<span>{{ teacher.work_years }}年</span></p>
