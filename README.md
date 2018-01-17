@@ -1,6 +1,7 @@
 # MxEduOL
-- A basic educational website wrote in Win10x64
-- And the website main part is finished, just need to deploy on the server(nginx + uwsgi)
+- Basic educational website wrote in Win10x64
+- The website main part is finished
+- Need to deploy on the server with nginx and uwsgi
 
 The tools I used as follows:
 
