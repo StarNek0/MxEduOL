@@ -70,7 +70,7 @@ class RegisterView(View):
         register_form = RegisterForm(request.POST)  # 为什么改了半天不显示errorput呢，因为把request.POST扔到了上面的get
         if register_form.is_valid():
             user_name = request.POST.get('email', '')
-            if UserProfile.objects.filter(email=user_name):
+            if UserProfile.objects.filter(email=user_name, is_active=1):
                 return render(request, 'register.html', {'msg': '该邮箱已经注册，请尝试登录或找回密码', 'register_form': register_form})
             pass_word = request.POST.get('password', '')  # 取出username和password
 
@@ -80,18 +80,18 @@ class RegisterView(View):
             user_profile.is_active = False
             user_profile.password = make_password(pass_word)  # 密码加密后再存储
 
+            user_profile.save()
 
             # 写入欢迎注册消息
             user_message = UserMessage()
             user_message.user = user_profile.id
             user_message.message = '欢迎注册极慕客'
+            user_message.save()
 
             send_register_email(user_name, 'register')
 
-            user_profile.save()
-            user_message.save()
 
-            return render(request, 'login.html')
+            return render(request, 'send_success.html')
         else:
             return render(request, 'register.html', {'register_form': register_form})
 
