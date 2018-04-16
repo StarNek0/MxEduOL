@@ -9,7 +9,7 @@
 - password: qweasdzxc
 
 
-## The tools I used as follows:
+## The tools I used as follows
 
 tools | version
 ----- | -----
@@ -18,12 +18,12 @@ MySQL |5.6.35
 Workbench|6.3CE
 Navicat|11.0.10
 
-## Then is the packages for Environmental dependence Version:
+## Then is the packages for Environmental dependence Version
 
 <img src="https://github.com/zsdostar/MxEduOL/raw/master/image/PackagesVersion.png" />
 
 
-## extra:
+## extra
 
 django-pure-pagination
 
