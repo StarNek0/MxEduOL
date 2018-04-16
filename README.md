@@ -5,6 +5,7 @@
 
 ## guest account
 (As the ALiCloud has baned the 25 port, so it would not send any register email.So...)
+- (View permission was granted to backstage`/xadmin`)
 - username: guest
 - password: qweasdzxc
 
