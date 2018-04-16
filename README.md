@@ -3,6 +3,12 @@
 - The website main part is finished
 - Need to deploy on the server with nginx and uwsgi
 
+## guest account
+(As the ALiCloud has baned the 25 port, so it would not send any register email.So...)
+- username: guest
+- password: qweasdzxc
+
+
 The tools I used as follows:
 
 tools | version
